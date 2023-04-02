@@ -1,0 +1,137 @@
+.layout-prices{
+    .search-bar{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:space-between;
+        padding: 20px 0;
+
+        .search-crypto{
+            button{
+                border: none;
+                outline: none;
+                background-color: transparent;
+            }
+            input{
+                padding: 5px 10px;
+                border: none;
+                outline: none;
+            }
+            border-bottom: 2px solid #000;
+        }
+
+        .search-tags{
+            display: flex;
+            &-item{
+                margin: 0 5px;
+                padding: 5px;
+                border: 1px solid #808080;
+                border-radius: 10px;
+                font-weight: 600;
+                color: #000;
+                text-align: center;
+                cursor: pointer;
+            }
+            &-item:hover{
+                background-color: #808080;
+                color: #fff;
+            }
+            &-item-active{
+                background-color: #000;
+                color: white;
+            }
+        }
+
+        .search-currency{
+            .form-control{
+                option{
+                    border-radius: 0;
+                }
+            }
+        }
+    }
+
+
+
+    .crypto{
+        display: flex;
+        flex-wrap: wrap;
+
+        &-item{
+            flex-basis: 25%;
+            padding: 10px;
+            
+            &-tag{
+                border: 1px solid rgb(11, 177, 11);
+                background-color: rgb(11, 177, 11,.1);
+                height: 220px;
+                padding: 10px;
+                border-radius: 3px;
+                &-title{
+                    display: flex;
+                    justify-content: space-between;
+
+                    .tag-right{
+                        .tag-rate{
+                            background-color: green;
+                            padding: 3px;
+                            border-radius: 5px;
+                            color:white;
+                        }
+                    }
+
+                }
+            }
+
+            &-tag-down{
+                border: 1px solid red;
+                background-color: rgb(255, 0, 0,.1);  
+                .tag-rate{
+                    background-color: red !important;
+                    padding: 3px;
+                    border-radius: 5px;
+                }
+            }
+        }
+       
+    }
+
+
+    @include media-breakpoint-down(md) {
+
+        .search-bar{
+            .search-crypto{
+                order: 2;
+                margin-top: 10px;
+            }
+    
+            .search-tags{
+                order: 1;
+                margin-top: 10px;
+                margin: auto;
+                &-item{
+                    font-size: 10px !important;
+                    white-space: nowrap;
+                    margin: 0 3px !important;
+                }
+            }
+    
+            .search-currency{
+                margin-top: 10px;
+                order: 3;
+            }
+        }
+        .crypto{
+            &-item{
+                flex-basis: 50%;
+            }
+        }
+    }
+
+    @include media-breakpoint-down(sm) {
+        .crypto{
+            &-item{
+                flex-basis: 100%;
+            }
+        }
+    }
+}

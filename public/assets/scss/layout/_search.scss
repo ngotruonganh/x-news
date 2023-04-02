@@ -1,0 +1,32 @@
+.wrap-search{
+    .search-bar{
+        text-align: center;
+        .button-search{
+            background-color: transparent;
+            border: none;
+            outline: none;
+            margin: 3px;
+        }
+
+        .input-search{
+            height: 40px;
+            width: 70%;
+            border: none;
+            outline: none;
+            margin: 3px;
+            border-bottom: 1px solid black;
+            text-indent: 10px;
+        }
+
+        .button-cancel{
+            background-color: transparent;
+            border: none;
+            outline: none;
+            margin: 3px;
+        }
+    }
+
+    .search-data{
+
+    }
+}

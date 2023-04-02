@@ -1,0 +1,237 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+main{
+    overflow:hidden;
+}
+
+
+.break-line{
+    background-color: black;
+}
+
+.title{
+    h2{
+        margin: 30px auto;
+        font-size: 40px;
+    }
+
+    .logo{
+        vertical-align:text-top
+    }
+}
+
+
+.category-layout{
+    width: 90%;
+    margin: 0 auto;
+  
+    .cate-right{
+        .blog-meta {
+            h4{
+                padding: 0;
+                font-size: 20px;
+            }
+        }
+
+        .blog-box{
+            flex-direction: row-reverse;
+            justify-content: center;
+        }
+    }
+
+
+    .cate-trending{
+        .blog-meta {
+            h4{
+                font-size: 24px;
+                padding:0;
+            }
+        }
+
+        .post-media{
+            margin: 10px auto;
+            width: 90%;
+        }
+
+        .blog-box{
+           margin: 10px;
+           justify-content: center;
+        }
+    }
+
+    .cate-feature{
+        .blog-meta {
+            margin-top: 10px;
+            h4{
+                font-size: 24px;
+                padding:0;
+            }
+        }
+  
+        .post-media{    
+            margin: 0 20px;
+        }
+
+        .blog-box{
+           margin: 10px;
+        }   
+    }
+
+    .wrap-indices{
+        background-color: #212121;
+        &-banner{
+            &-logo{
+                margin-top: 50px;
+                filter: invert(70%);
+            }
+            &-content{
+                margin-top: 20px;
+                margin-bottom:100px;
+                p{
+                    font-size: 24px;
+                    line-height: 38px;
+                    color: #212121;
+                    font-weight: 500;
+                }
+            }
+        }
+        &-table{
+            .table{
+                font-size: 20px;
+                .index-name{
+                    width: 70%;
+                }
+                .thead{
+                    background-color: #262626;
+                    color: white;
+                }
+                .tbody{
+                    td{
+                        text-indent: 30px;
+                    }
+                }
+            }
+        }
+    }
+    
+    .form-box{
+        .form-contact{
+            .title{
+                h4{
+                    font-size: 18px;
+                    font-weight: 400;
+                }
+            }
+           .wrap{
+               width: 60%;
+               margin: auto;
+
+               .button-send-contact{
+                    text-align: center;
+                    button{
+                        border-radius: 5px;
+                        margin-bottom: 10px;
+                        cursor: pointer;
+                    }
+               }
+
+           }
+        }
+    }
+
+
+    @include media-breakpoint-down(md) {
+
+        .cate-right{
+            width: 90%;
+            margin: 0 auto;
+            margin-top: 0px !important;
+            .blog-box{
+                .post-media{
+                    width: 80%;
+                    margin: 10px auto;
+                    margin-top: 20px;
+                }
+            }
+        }
+
+        .cate-trending{
+            width: 100%;
+            margin: 0 auto;
+            margin-top: 0px !important;
+
+            .blog-meta {
+                h4{
+                    padding: 0;
+                    font-size: 18px;
+                }
+            }
+            .blog-box{
+                margin: 5px;
+            }
+        }
+
+        .cate-feature{
+            .post-media{
+                
+            }
+
+            .blog-meta{
+                border-bottom: 1px solid gray;
+                h4{
+                    font-size: 18px;
+                }
+            }
+        }
+
+        .wrap-indices{
+            &-table{
+                .table{
+                    .tbody{
+                        td{
+                            text-indent: 0px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .form-box{
+            .form-contact{
+                .wrap{
+                    width: 100%;
+                }
+            }
+        }
+
+    }
+
+    .bottom-line{
+        border-bottom: 1px solid gray;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+    }
+}
+
+.button-more{
+    margin-top: 20px;
+    text-align: center;
+    button{
+        width: 300px;
+        height: 50px;
+        background-color: rgb(27, 27, 27);
+        color: white;
+        font-weight: bold;
+        outline: none;
+        border: 1px solid black;
+        border-radius: 5px;
+    }
+    button:hover{
+        transform: scale(1.05);
+        background-color: black;
+        cursor: pointer;
+    }
+}
