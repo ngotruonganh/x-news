@@ -516,6 +516,10 @@ div.tab button:hover {
     width: 33.33333%;
 }
 
+.half-side{
+    width: 50% !important;
+}
+
 .post-media img,
 .masonry-box img {
     -webkit-transition: all .3s ease-in-out;
@@ -1590,16 +1594,6 @@ hr.invis3 {
 
 .newsletter-widget .btn i {
     padding-left: 0.5rem
-}
-
-.btn {
-    background-color: #111111;
-    border: 0 none;
-    border-radius: 0;
-    font-size: 14px;
-    font-weight: bold;
-    padding: 0.8rem 2rem;
-    text-transform: none;
 }
 
 .link-widget li {

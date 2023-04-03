@@ -1,0 +1,32 @@
+{
+    "data": [
+        {
+            "name": "All",
+            "tagSeo": "all"
+        },
+        {
+            "name": "Bank",
+            "tagSeo": "bank"
+        },
+        {
+            "name": "NFT",
+            "tagSeo": "nft"
+        },
+        {
+            "name": "Blockchain",
+            "tagSeo": "blockchain"
+        },
+        {
+            "name": "Crypto",
+            "tagSeo": "crypto"
+        },
+        {
+            "name": "Payment",
+            "tagSeo": "payment"
+        },
+        {
+            "name": "Investments",
+            "tagSeo": "investments"
+        }
+    ]
+}

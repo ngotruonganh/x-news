@@ -1,9 +1,9 @@
 import React from 'react'
+import classNames from 'classnames'
 import Link from 'next/link';
-export default function BlogBox({ className, data, desc = false, showName = false }) {
-
+export default function ListItem({ className, data, desc = true }) {
     return (
-        data ? <div className="blog-box">
+        <div className="list-item-wrapper">
             <div className="post-media">
                 <Link
                     href={{
@@ -13,16 +13,15 @@ export default function BlogBox({ className, data, desc = false, showName = fals
                         }
                     }}
                 >
-                    <span>
+                    <div>
                         <img src={data.image} alt="" className="img-fluid" />
-                        <div className="hovereffect">
-                            <span />
-                        </div>
-                    </span>
+                        <div className="hovereffect" />
+                    </div>
                 </Link>
-            </div>
-            <div className={className}>
 
+            </div>
+            <div className={classNames("blog-meta big-meta", className)}>
+                <div className='meta'><span className='auth'>{data.author}</span> - <span className='date'> {data.date}</span></div>
                 <Link
                     href={{
                         pathname: `${data.type.toLowerCase()}/[blog]`,
@@ -31,16 +30,13 @@ export default function BlogBox({ className, data, desc = false, showName = fals
                         }
                     }}
                 >
-                    <div>
-                        <div className='meta'><div className='auth'>{data.author}</div> - <div className='date'>{data.date}</div> </div>
-                        <h4>{data.title}</h4>
-                    </div>
+                    <div className='text-wrap'>{data.title}</div>
                 </Link>
-                {desc && <p>{data.desc}</p>}
-                {showName && <small><a href={data.url} >{data.type}</a></small>}
+
+                {desc && <p className='text-wrap'>{data.desc}</p>}
+
             </div>
         </div>
-            :
-            <div />
+
     )
 }
