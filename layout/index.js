@@ -14,9 +14,9 @@ export default function index({ children }) {
                 <meta name="description" content="" />
                 <meta name="author" content="" />
             </Head>
-            <main>
+            <main> 
                 <Header />
-                <Slidebar />
+                {/* <Slidebar /> */}
                 {children}
                 <Footer />
             </main>

@@ -15,7 +15,7 @@ export default function SectionFour({ data }) {
                         <div >Category</div>
                         <div>
                             {dataTag.data.map((item, idx) => {
-                                return <span className={classNames("tag m-1", getTagColor(item.tagSeo))} >{item.name}</span>
+                                return <span key={idx} className={classNames("tag m-1", getTagColor(item.tagSeo))} >{item.name}</span>
                             })}
                         </div>
                     </div>

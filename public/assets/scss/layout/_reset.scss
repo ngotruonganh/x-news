@@ -253,6 +253,10 @@ main {
 .layout-wrapper {
     width: 90%;
     margin: 0 auto;
+
+    @include media-breakpoint-down(md) {
+        width: 99%;
+    }
 }
 
 .throw-line {

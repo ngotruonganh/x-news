@@ -37,7 +37,7 @@ export default function Header() {
           </div>
         </div>
         {showSearch && <SearchFrom onClose={() => setShowSearch(false)} />}
-        <div className="logo-layout">
+        <div className="layout-wrapper logo-layout">
           <div className="header-section mt-2">
             <div className="container-fluid">
               <div className="row">
