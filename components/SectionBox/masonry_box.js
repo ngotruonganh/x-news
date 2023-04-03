@@ -1,22 +1,29 @@
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import React from 'react'
-export default function MasonryBox({ className, data, desc = false }) {
+import { getTagColor } from '../../utils/func'
+import classNames from 'classnames'
+
+export default function MasonryBox({ className, data, desc = false,meta=false }) {
     const router = useRouter()
     return (
         <div className={className}>
+            <span className={classNames("tag",getTagColor(data.type))} >{data.type}</span>
             <img src={data.image} alt="" className="img-fluid" />
-            <div className="shadoweffect" 
-                onClick={()=>{
+            <div className="shadoweffect"
+                onClick={() => {
                     router.push({
-                        pathname:`${data.type.toLowerCase()}/[blog]`,
-                        query:{blog:data.url}
-                        
+                        pathname: `${data.type.toLowerCase()}/[blog]`,
+                        query: { blog: data.url }
+
                     })
                 }}
             >
                 <div className="shadow-desc" >
                     <div className="blog-meta">
+                        {meta &&
+                            <div>{data.date} - {data.author}</div>
+                        }
                         <Link
                             href={{
                                 pathname: `${data.type.toLowerCase()}/[blog]`,
@@ -25,16 +32,12 @@ export default function MasonryBox({ className, data, desc = false }) {
                                 }
                             }}
                         >
-                            <div>
-                                <span className="bg-aqua" ><a href="#" >{data.type}</a></span>
-                                <h4><a href="#">{data.title}</a></h4>
+                            <div className="title">
+                                {data.title}
                             </div>
                         </Link>
                         {desc &&
-                            <div>
-                                <small><a href="#" >{data.date}</a></small>
-                                <small><a href="blog-author.html" >{data.author}</a></small>
-                            </div>
+                            <div>{data.desc}</div>
                         }
                     </div>
                 </div>

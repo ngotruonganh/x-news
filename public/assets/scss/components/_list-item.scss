@@ -1,0 +1,42 @@
+.list-news-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.list-item-wrapper {
+    display: flex;
+    color: #393939;
+    margin: 10px;
+    gap: 10px;
+    height: 90px;
+    .post-media {
+        height: 100%;
+    }
+
+    img {
+        width: 120px;
+        height: 90px;
+        object-fit: cover;
+    }
+
+    .blog-meta {
+        flex-basis: 60%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        .title {
+            font-weight: 500;
+        }
+    }
+}
+
+@include media-breakpoint-down(md) {
+    .list-item-wrapper {
+        .post-media {
+            flex-basis: 40%;
+            padding-bottom: 30%;
+        }
+    }
+}
