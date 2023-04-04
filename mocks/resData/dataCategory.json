@@ -1,0 +1,44 @@
+{
+    "data": [
+        {
+            "name": "All", 
+            "tagSeo": "all",
+            "total":100
+        },
+        {
+            "name": "Bank",
+            "tagSeo": "bank",
+            "total":20
+        },
+        {
+            "name": "NFT",
+            "tagSeo": "nft",
+            "total":30
+        },
+        {
+            "name": "Blockchain",
+            "tagSeo": "blockchain",
+            "total":40
+        },
+        {
+            "name": "Crypto",
+            "tagSeo": "crypto",
+            "total":51
+        },
+        {
+            "name": "Payment",
+            "tagSeo": "payment",
+            "total":60
+        },
+        {
+            "name": "Investments",
+            "tagSeo": "investments",
+            "total":12
+        },
+        {
+            "name": "Investments",
+            "tagSeo": "investments",
+            "total":12
+        }
+    ]
+}

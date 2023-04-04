@@ -1,17 +1,18 @@
 @use "sass:math";
-
-// pages, views or layout
 @import "vendors/bootstrap/bootstrap";
 @import "vendors/colors";
+
+// pages, views or layout
 @import "layout/reset";
 @import "layout/error";
-@import "layout/header";
 @import "layout/slick";
 @import "layout/slidebar";
 @import "layout/prices";
 @import "layout/blog";
 @import "layout/search";
+@import "layout/home";
 
 // compoents
+@import "components/header";
 @import "components/masonry-box";
 @import "components/list-item";

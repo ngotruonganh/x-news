@@ -12,7 +12,7 @@
         }
 
         img {
-            height: 598px;
+            height: 36rem;
             object-fit: cover;
         }
     }
@@ -25,7 +25,7 @@
         height: 100%;
 
         img {
-            height: 299px;
+            height: 18rem;
             object-fit: cover;
         }
     }
@@ -94,7 +94,6 @@
 
 
 
-
 @include media-breakpoint-down(md) {
     .masonry-blog {
         display: flex;
@@ -104,7 +103,7 @@
             flex-basis: 100%;
 
             img {
-                height: 298px;
+                height: 18rem;
             }
         }
 

@@ -4,7 +4,7 @@ import { getTagColor } from '../../utils/func'
 import classNames from 'classnames'
 import ListNews from '../ListNews'
 import dataTag from '../../mocks/resData/dataTag.json'
-
+import dataSocial from '../../mocks/resData/dataSocial.json'
 export default function SectionFour({ data }) {
 
     return (
@@ -24,7 +24,7 @@ export default function SectionFour({ data }) {
                 <div className="col-lg-3 col-md-3 col-sm-12 col-xs-12">
                     <div>
                         <div className="d-flex justify-content-between">
-                        Stay Connected
+                            Stay Connected
                         </div>
                     </div>
                     <hr className='throw-line' />
@@ -46,8 +46,28 @@ export default function SectionFour({ data }) {
                 <div className="col-lg-5 col-md-5 col-sm-12 col-xs-12">
                     <ListNews data={data} />
                 </div>
-                <div className="col-lg-3 col-md-3 col-sm-12 col-xs-12">
-                  
+                <div className="col-lg-3 col-md-3 col-sm-12 col-xs-12 social-wrapper">
+                    <div className='list-social'>
+                        {dataSocial.data.map((item, idx) => {
+                            return <div className='social-item'>
+                                <div className={classNames(item.name, "dummy d-flex")} key={idx}>
+                                    <img src={item.icon} />
+                                    <div>
+                                        <div>
+                                            {item.follwers}
+                                        </div>
+                                        <div >
+                                            Follwers
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        })}
+                    </div>
+                    <div className='ads-wrapper mt-3'>
+                       <img src="mocks/images/ads.svg"/>
+                       <div className='ads-item'>Ad</div>
+                    </div>
                 </div>
             </div>
         </div>
