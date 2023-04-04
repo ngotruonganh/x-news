@@ -1,0 +1,70 @@
+{
+    "data": [
+        {
+            "type": "Bank",
+            "title": "When it comes to cloud computing, the sky's the limit",
+            "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus lobortis augue condimentum maecenas. Metus at in fames vitae posuere ut vel vulputate ...",
+            "image": "mocks/images/banner18.svg",
+            "date": "27 Mar 2023",
+            "author": "by FintechX",
+            "url": "/The-golden-rules-you-need ",
+            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus lobortis augue condimentum maecenas. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus lobortis augue condimentum maecenas.",
+            "tagSeo":"bank"
+        },
+        {
+            "type": "Blockchain",
+            "title": "Investors poised for action as President Xi set to open NCP",
+            "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus lobortis augue condimentum maecenas. Metus at in fames vitae posuere ut vel vulputate ...",
+            "image": "mocks/images/banner19.svg",
+            "date": "27 Mar 2023",
+            "author": "by FintechX",
+            "url": "/The-golden-rules-you-need ",
+            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus lobortis augue condimentum maecenas. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus lobortis augue condimentum maecenas.",
+            "tagSeo":"blockchain"
+        },
+        {
+            "type": "NFT",
+            "title": "Meet the CEO: SCRYPT's Norman Wooding talks trust in DeFi",
+            "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus lobortis augue condimentum maecenas. Metus at in fames vitae posuere ut vel vulputate ...",
+            "image": "mocks/images/banner20.svg",
+            "date": "27 Mar 2023",
+            "author": "by FintechX",
+            "url": "/The-golden-rules-you-need ",
+            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus lobortis augue condimentum maecenas. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus lobortis augue condimentum maecenas.",
+            "tagSeo":"nft"
+        },
+        {
+            "type": "Crypto",
+            "title": "Global fintech investment fell by 30% last year, KPMG says",
+            "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus lobortis augue condimentum maecenas. Metus at in fames vitae posuere ut vel vulputate ...",
+            "image": "mocks/images/banner21.svg",
+            "date": "27 Mar 2023",
+            "author": "by FintechX",
+            "url": "/The-golden-rules-you-need ",
+            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus lobortis augue condimentum maecenas. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus lobortis augue condimentum maecenas.",
+            "tagSeo":"crypto"
+        },
+        {
+            "type": "Payment",
+            "title": "Fintech Trailblazer: Max Levchin, CEO and Founder of Affirm",
+            "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus lobortis augue condimentum maecenas. Metus at in fames vitae posuere ut vel vulputate ...",
+            "image": "mocks/images/banner22.svg",
+            "date": "27 Mar 2023",
+            "author": "by FintechX",
+            "url": "/The-golden-rules-you-need ",
+            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus lobortis augue condimentum maecenas. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus lobortis augue condimentum maecenas.",
+            "tagSeo":"payment"
+        },
+        {
+            "type": "Investments",
+            "title": "Navigating the NFT space and the future of tokenized assets",
+            "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus lobortis augue condimentum maecenas. Metus at in fames vitae posuere ut vel vulputate ...",
+            "image": "mocks/images/banner23.svg",
+            "date": "27 Mar 2023",
+            "author": "by FintechX",
+            "url": "/The-golden-rules-you-need ",
+            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus lobortis augue condimentum maecenas. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus lobortis augue condimentum maecenas.",
+            "tagSeo":"investments"
+        }
+    ]
+}
