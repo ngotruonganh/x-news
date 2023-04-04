@@ -91,12 +91,12 @@ export default function SectionFive({ data }) {
                         Category
                         <hr className='throw-line' />
                         {dataCategory.data.map((item, idx) => {
-                            return <div className="rank-item">
+                            return <div className="rank-item" key={idx}>
                                 <span className='title'>
                                     <img src="assets/icons/icon-right.svg" />
                                     {item.name}
                                 </span>
-                                <span key={idx} className={classNames("total", getTagColor(item.tagSeo))} >{item.total}</span>
+                                <span  className={classNames("total", getTagColor(item.tagSeo))} >{item.total}</span>
                             </div>
                         })}
                     </div>

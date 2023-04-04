@@ -49,8 +49,8 @@ export default function SectionFour({ data }) {
                 <div className="col-lg-3 col-md-3 col-sm-12 col-xs-12 social-wrapper">
                     <div className='list-social'>
                         {dataSocial.data.map((item, idx) => {
-                            return <div className='social-item'>
-                                <div className={classNames(item.name, "dummy d-flex")} key={idx}>
+                            return <div className='social-item' key={idx}>
+                                <div className={classNames(item.name, "dummy d-flex")} >
                                     <img src={item.icon} />
                                     <div>
                                         <div>
