@@ -8,7 +8,7 @@
         background-color: #f3e6e8;
         background-image: linear-gradient(315deg, #f3e6e8 0%, #d5d0e5 74%);
         opacity: .9;
-
+        z-index: 999;
         &-layout{
             margin-top: 80px;
             .button-search{

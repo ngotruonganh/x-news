@@ -4,19 +4,19 @@ export default function Footer() {
   return (
     <div className="footer">
       <div className="row">
-        <div className="col-lg-12 col-md-12 col-sm-2 col-xs-12 d-flex position-relative">
-          <img src="/assets/images/follow-us-5.png" alt="" />
-          <img src="/assets/images/follow-us-4.png" alt="" />
-          <img src="/assets/images/follow-us-3.png" alt="" />
-          <img src="/assets/images/follow-us-2.png" alt="" />
-          <img src="/assets/images/follow-us-1.png" alt="" />
+        <div className="col-12 d-flex position-relative">
+          <img className="w-100" src="/assets/images/follow-us-1.png" alt="" />
+          <img className="w-100" src="/assets/images/follow-us-2.png" alt="" />
+          <img className="w-100" src="/assets/images/follow-us-3.png" alt="" />
+          <img className="w-100" src="/assets/images/follow-us-4.png" alt="" />
+          <img className="w-100" src="/assets/images/follow-us-5.png" alt="" />
           <a className="follow-us" href="#">
             <img src="/assets/images/instargram.png" alt="follow us" />
             <span>Follow us</span>
           </a>
         </div>
       </div>
-      <div className="container py-5">
+      <div className="layout py-5">
         <div className="row">
           <div className="col-12 col-md-3 d-flex flex-column justify-content-between mt-3 mt-md-0">
             <img src="/assets/images/logo-white.svg" alt="main logo" />

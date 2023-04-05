@@ -1,11 +1,11 @@
 import React, { useState } from "react";
-import TopSocial from "./top_social";
 import TopMenu from "./top_menu";
 import SearchBar from "./search_bar";
 import NavigationMenu from "./nav_menu";
 import { menuList } from "../data/dataMenu";
 import classNames from "classnames";
 import SearchFrom from "../SearchForm";
+import TopWeather from "./top_weather";
 export default function Header() {
   const [open, setOpen] = useState(false);
   const [showSearch, setShowSearch] = useState(false);
@@ -22,15 +22,15 @@ export default function Header() {
     <>
       <div id="wrapper">
         <div className="topbar-section p-0">
-          <div className="container">
+          <div className="layout">
             <div className="row">
-              <div className="col-lg-3 col-md-6 col-sm-6 hidden-xs-down d-flex align-items-center">
-                <TopSocial className="topsocial d-flex flex-column align-items-start" />
+              <div className="col-12 col-lg-3 d-flex justify-content-start align-items-center">
+                <TopWeather className="topsocial d-flex flex-lg-column flex-xl-row" />
               </div>
-              <div className="col-lg-6 hidden-md-down">
+              <div className="col-12 col-lg-6">
                 <TopMenu />
               </div>
-              <div className="col-lg-3 col-md-6 col-sm-6 col-xs-12 d-flex align-items-center">
+              <div className="col-12 col-lg-3 d-flex align-items-center">
                 <SearchBar onClickSearch={onClickSearch} />
               </div>
             </div>
@@ -39,7 +39,7 @@ export default function Header() {
         {showSearch && <SearchFrom onClose={() => setShowSearch(false)} />}
         <div className="layout-wrapper logo-layout">
           <div className="header-section mt-2">
-            <div className="container">
+            <div className="layout">
               <div className="row">
                 <div className="col-12 col-md-4 d-flex align-items-center">
                   <div className="logo">
@@ -48,11 +48,11 @@ export default function Header() {
                     </a>
                   </div>
                 </div>
-                <div className="col-12 col-md-8 position-relative">
+                <div className="col-12 col-md-8 position-relative mt-3 mt-md-0">
                   <div className="logo">
                     <a href="/">
                       <img
-                        className="w-100"
+                        className="readmore-img w-100"
                         src="/assets/images/read-more.png"
                         alt="main logo"
                       />
@@ -82,7 +82,7 @@ export default function Header() {
         </div>
       </div>
       <header className="header w-100">
-        <nav className="navbar navbar-inverse navbar-toggleable-md container">
+        <nav className="navbar navbar-inverse navbar-toggleable-md layout p-0">
           <button
             className="navbar-toggler "
             type="button"
