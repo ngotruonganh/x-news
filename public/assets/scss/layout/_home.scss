@@ -38,6 +38,12 @@
             height: 180px;
         }
     }
+    .blog-meta {
+        .title {
+            font-size: 20px;
+            color: white;
+        }
+    }
 }
 
 
@@ -83,10 +89,7 @@
             height: 180px;
         }
     }
-
-   
-
-    
+ 
 
     .ads-wrapper {
         display: flex;
@@ -107,10 +110,12 @@
 }
 
 .section-six-wrapper {
-    .masonry-box {
-        img {}
+  
+.masonry-full {
+        .title {
+            color: white;
+        }
     }
-
 }
 
 
