@@ -12,9 +12,10 @@ export default function Custom404() {
           className="bg-warning border border-0 py-3 px-5 font-weight-bold rounded"
         >
           <i class="fa-solid fa-arrow-left mr-4"></i>
-          Go Back Home
+          Go Back Home 
         </a>
       </div>
     </Layout>
-  );
+  );  
 }
+ 

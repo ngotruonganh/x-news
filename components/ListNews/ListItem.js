@@ -7,9 +7,9 @@ export default function ListItem({ className, data, desc = true }) {
             <div className="post-media">
                 <Link
                     href={{
-                        pathname: `${data.type.toLowerCase()}/[blog]`,
+                        pathname: `/posts/[chapt]`,
                         query: {
-                            blog: data.url
+                            chapt: data.url
                         }
                     }}
                 >
@@ -24,9 +24,9 @@ export default function ListItem({ className, data, desc = true }) {
                 <div className='meta'><span className='auth'>{data.author}</span> - <span className='date'> {data.date}</span></div>
                 <Link
                     href={{
-                        pathname: `${data.type.toLowerCase()}/[blog]`,
+                        pathname: `/posts/[chapt]`,
                         query: {
-                            blog: data.url
+                            chapt: data.url
                         }
                     }}
                 >

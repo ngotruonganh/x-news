@@ -1,4 +1,5 @@
 import Layout from '../../layout'
+import { BreadCrumb } from '../../components';
 // import Images from '/assets/images'
 
 export default function ContactUs() {
@@ -6,10 +7,7 @@ export default function ContactUs() {
         <Layout>
             <div className="contact-wrapper">
                 <div className="contact-left">
-                    <div className="link">
-                        <img src="//assets/icons/contact-us-1.svg" alt="" />
-                        Home / Contact Us
-                    </div>
+                    <BreadCrumb subTitle="Contact Us" />
                     <div className="name">Contact Us</div>
                     <div className="desc">This is the place of all the archives news, get it and make sure you always follow us
                         to

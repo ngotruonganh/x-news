@@ -4,19 +4,28 @@ import dataSection4 from '../../mocks/resData/dataSection4.json'
 import dataSocial from '../../mocks/resData/dataSocial.json'
 import { getTagColor } from '../../utils/func'
 import BlogBox from '../../components/SectionBox/blog_box'
+import {BreadCrumb} from '../../components'
+import { useRouter } from 'next/router'
 export default function Chapts() {
     const data = dataSection4.data
+
+    const router = useRouter()
+
     return (
         <Layout>
             <div className="layout-wrapper chapter-wrapper">
                 <div className='mt-3'>
                     <div className='row'>
                         <div className="col-lg-9 col-md-9 col-sm-12 col-xs-12 content-wrapper">
-                            <div className='banner-image'>
+                            <div className='banner-image mb-3'>
                                 <img src="/mocks/images/bannerPosts.svg"/>
                             </div>
+                            <BreadCrumb subTitle="Category/ Singel Post"/>
+                            <div className='title'>After all is said and done, more is done</div>
                             <div className='author-wrapper'>
-                                <div className="meta">
+                                <div className="meta" onClick={()=>{
+                                    router.push("/contact-us")
+                                }}>
                                     <div className='avatar'><img src="/mocks/icons/user1.svg" /></div>
                                     <div>
                                         <div className='author'>FindTechX</div>
@@ -40,7 +49,7 @@ export default function Chapts() {
 
                                 </div>
                             </div>
-                            <div className='title'>After all is said and done, more is done</div>
+                         
                             <div className="description-wrapper">
                                 <p>
                                     Cryptocurrency is a skyrocketing segment of the economy. The total value of
