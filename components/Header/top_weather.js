@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Topsocial({ className }) {
+export default function TopWeather({ className }) {
   return (
     <div className={className}>
       <div className="weather mr-2">

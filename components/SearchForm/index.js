@@ -28,7 +28,7 @@ export default function SearchForm({ onClose }) {
                         className="search-input"
                         value={searchQuery}
                         type="text"
-                        placeholder="Search Coin Desk"
+                        placeholder="Search for"
                         onChange={onChangeSearchQuery}
                     />
                     <button className="button-cancel" onClick={onClose}>Cancel</button>

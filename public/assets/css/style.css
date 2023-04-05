@@ -109,7 +109,6 @@ a {
 **************************************/
 
 .header {
-    padding: 0.4rem 0;
     position: relative;
     background-color: rgba(57, 57, 57, 1);
 }
@@ -143,11 +142,18 @@ a {
 
 .navbar-toggleable-md .navbar-nav .nav-link:hover {
     text-decoration: underline;
+    cursor: pointer;
 }
 
 .header-section {
     padding: 1rem 0 1.5rem;
     background-color: #ffffff;
+}
+
+.layout {
+    width: 80%;
+    max-width: 100%;
+    margin: auto;
 }
 
 .weather {
@@ -162,7 +168,14 @@ a {
     margin: auto;
     text-align: center;
     display: block;
-    object-fit: contain;
+    object-fit: fill;
+}
+
+.bg-nav-link  {
+    background-color: rgba(250, 191, 44, 1);
+}
+.readmore-img {
+    height: 120px;
 }
 
 .in-image {
@@ -200,7 +213,6 @@ a {
     font-weight: 400;
     text-transform: capitalize;
     font-size: 14px;
-    padding: 4px 1.8rem;
 }
 
 .header .dropdown-item:hover,
@@ -223,6 +235,10 @@ a {
     margin-bottom: 0;
 }
 
+.topsocial {
+    font-size: 12px;
+}
+
 .topsocial a {
     width: 40px;
     height: 40px;
@@ -236,7 +252,7 @@ a {
 
 .topbar-section {
     background-color: #ffffff;
-    font-size: 14px;
+    font-size: 12px;
     box-shadow: 0px 1px 10px rgba(246, 80, 80, 0.15);
 }
 

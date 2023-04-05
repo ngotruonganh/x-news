@@ -72,7 +72,7 @@ export default function Search({query}) {
                         <input
                             className="input-search"
                             type="text"
-                            placeholder="Search Coin Desk"
+                            placeholder="Search for"
                             value={searchQuery}
                             onChange={onChangeSearchQuery}
                         />

@@ -1,8 +1,11 @@
 import React from "react";
 import Link from "next/link";
+import { useRouter } from "next/router";
+
 export default function NavigationMenu({ menu, onClickMenu }) {
+  const router = useRouter();
   return (
-    <div className="justify-content-md-center">
+    <div className="justify-content-md-center d-none d-lg-block">
       <ul className="navbar-nav">
         {menu &&
           menu.map((item, idx) => {
@@ -14,7 +17,11 @@ export default function NavigationMenu({ menu, onClickMenu }) {
                   }}
                 >
                   <span
-                    className="nav-link color-pink-hover"
+                    className={
+                      router.pathname == item.url
+                        ? "nav-link bg-nav-link text-dark"
+                        : "nav-link"
+                    }
                     onClick={() => onClickMenu()}
                   >
                     {item.name}
