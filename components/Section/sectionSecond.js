@@ -5,7 +5,7 @@ import classNames from 'classnames'
 import ListNews from '../ListNews'
 import dataTag from '../../mocks/resData/dataTag.json'
 export default function SectionSecond({ data }) {
-
+    
     return (
         <div className='mt-3'>
             <div className='row'>

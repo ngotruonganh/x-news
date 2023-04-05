@@ -1,0 +1,213 @@
+.section-third-wrapper {
+    .list-news-wrapper {
+        justify-content: space-between;
+    }
+    .list-item-wrapper {
+        height: 180px;
+        img {
+            width: 240px;
+            height: 180px;
+        }
+    }
+}
+
+.section-four-wrapper{
+    .ads-wrapper {
+        justify-content: center;
+        display: flex;
+        padding-left: 5px;
+        padding-top: 5px;
+        position: relative;
+    
+        img {
+            width: 100%;
+            object-fit: cover;
+        }
+    
+        .ads-item {
+            position: absolute;
+            top: 45%;
+            left: 45%;
+            font-size: 36px;
+            color: white;
+        }
+    }
+    
+}
+
+.section-five-wrapper {
+    .list-news-wrapper {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .list-item-wrapper {
+        height: 180px;
+        flex-basis: 50%;
+        margin: 0;
+        margin-top: 10px;
+        img {
+            width: 240px;
+            height: 180px;
+        }
+    }
+   
+    .subscribe-wrapper {
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #DEDADA;
+        height: 300px;
+    
+        .title {
+            font-style: normal;
+            font-weight: 800;
+            font-size: 18px;
+            line-height: 163.9%;
+            color: #2D2D2D;
+            margin: 10px;
+
+           
+        }
+       
+        input {
+            width: 220px;
+            height: 40px;
+            background: #FFFFFF;
+            padding: 10px;
+            text-align: center;
+            outline: none;
+        }
+    
+        
+    }
+
+    button {
+        margin-top: 10px;
+        background: #FABF2C;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 8px 32px;
+        gap: 10px;
+        width: 220px;
+        height: 38px;
+        outline: none;
+        border: none;
+    }
+
+    .ads-wrapper{
+        display: flex;
+        margin-top: 30px;
+        position: relative;
+        color: white;
+        height: 120px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .hight-light{
+            color: #FABF2C !important;
+        }
+    }
+}
+
+.section-six-wrapper{
+    .masonry-box {
+        img {
+        }
+    }
+
+}
+
+
+.social-wrapper {
+    .list-social {
+        display: flex;
+        flex-wrap: wrap;
+        color: white;
+        font-size: 12px;
+        line-height: 20px;
+        font-weight: 400;
+
+        .social-item {
+            flex-basis: 50%;
+            padding-left: 5px;
+            padding-top: 5px;
+
+            .dummy {
+                padding: 5px;
+                border-radius: 1px;
+            }
+
+            img {
+                margin: 5px 15px;
+            }
+        }
+
+        .facebook {
+            background-color: #4281FF;
+        }
+
+        .instagram {
+            background-color: #4281FF;
+        }
+
+        .youtube {
+            background: #EF5043;
+        }
+
+        .twitter {
+            background: #42C0F5;
+        }
+
+        .be {
+            background: #1B7BFD;
+        }
+
+        .pink {
+            background: #F7679D;
+        }
+    }
+}
+
+
+
+
+.rank-wrapper {
+    display: flex;
+    flex-direction: column;
+
+    .rank-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10px;
+
+        .title {
+            img {
+                padding: 5px;
+            }
+
+            height: 40px;
+            font-size: 16px;
+            text-align: center;
+            vertical-align: middle;
+            line-height: 40px;
+            vertical-align: middle;
+        }
+
+        .total {
+            width: 40px;
+            height: 40px;
+            color: white;
+            font-size: 16px;
+            text-align: center;
+            vertical-align: middle;
+            line-height: 40px;
+        }
+    }
+}

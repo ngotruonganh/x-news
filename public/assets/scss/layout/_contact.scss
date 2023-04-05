@@ -1,0 +1,176 @@
+.contact-wrapper {
+    width: 80%;
+    margin: 30px auto;
+    display: flex;
+
+    .contact-left {
+        flex: 70%;
+        margin-bottom: 30px;
+
+        .link {
+            font-weight: 800;
+            font-size: 14px;
+            color: rgba(57, 57, 57, 0.6);
+
+            img {
+                margin-right: 10px;
+            }
+        }
+
+        .name {
+            font-weight: 800;
+            font-size: 36px;
+            margin: 10px 0;
+            color: #393939;
+        }
+
+        .desc {
+            font-weight: 400;
+            font-size: 14px;
+            color: rgba(57, 57, 57, 0.6);
+            white-space: nowrap;
+        }
+
+        .form {
+            margin-top: 40px;
+
+            .title {
+                font-weight: 800;
+                font-size: 24px;
+                color: #393939;
+            }
+
+            .form-group {
+                display: flex;
+                margin-top: 20px;
+
+                .contact-form-control {
+                    flex: 1;
+                    margin-right: 30px;
+                    border: none;
+
+                    label {
+                        font-weight: 400;
+                        font-size: 18px;
+                        color: #393939;
+                    }
+
+                    input {
+                        margin-top: 10px;
+                        display: block;
+                        width: 100%;
+                        height: 60px;
+                        padding: 16px;
+                        font-size: 24px;
+                        border: 1px solid #393939;
+
+                        &#message {
+                            height: 160px;
+                        }
+                    }
+                }
+            }
+
+            .submit {
+                margin-top: 40px;
+
+                button {
+                    background: #FABF2C;
+                    padding: 20px 30px;
+                    font-weight: 500;
+                    font-size: 24px;
+                    color: #233138;
+                    border: none;
+                    outline: none;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+    .contact-right {
+        flex: 30%;
+
+        .item {
+            padding: 25px;
+            margin-bottom: 30px;
+            box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+
+            .img {
+                width: 60px;
+                height: 60px;
+                margin: 0 auto;
+                border-radius: 50%;
+                border: 1px solid #FABF2C;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .title {
+                font-weight: 500;
+                font-size: 24px;
+                color: #323232;
+                margin: 20px 0 10px 0;
+            }
+
+            .desc {
+                font-weight: 400;
+                font-size: 15px;
+                color: #5C5C5C;
+                white-space: nowrap;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1360px) {
+    .contact-wrapper {
+        flex-wrap: wrap;
+
+        .contact-left {
+            .contact-form-control:last-child {
+                margin-right: 0 !important;
+            }
+        }
+
+        .contact-right {
+            display: flex;
+
+            .item {
+                flex: 1;
+                margin-right: 30px;
+
+                &:last-child {
+                    margin-right: 0;
+                }
+
+                .desc {
+                    white-space: normal;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .contact-wrapper {
+        .contact-left {
+            flex: 100%;
+
+            .desc {
+                white-space: unset;
+            }
+        }
+
+        .contact-right {
+            flex-wrap: wrap;
+
+            .item {
+                margin-right: 0;
+                flex: 100%;
+            }
+        }
+    }
+}

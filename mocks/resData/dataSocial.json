@@ -1,0 +1,39 @@
+{
+    "data": [
+        {
+            "name": "facebook",
+            "icon": "assets/icons/facebook.svg",
+            "follwers": 15000,
+            "url": "/"
+        },
+        {
+            "name": "instagram",
+            "icon": "assets/icons/instagram.svg",
+            "follwers": 15000,
+            "url": "/"
+        },
+        {
+            "name": "youtube",
+            "icon": "assets/icons/youtube.svg",
+            "follwers": 15000,
+            "url": "/"
+        },
+        {
+            "name": "twitter",
+            "icon": "assets/icons/twitter.svg",
+            "follwers": 15000,
+            "url": "/"
+        },
+        {
+            "name": "be",
+            "icon": "assets/icons/be.svg",
+            "follwers": 15000,
+            "url": "/"
+        },{
+            "name": "pink",
+            "icon": "assets/icons/pink.svg",
+            "follwers": 15000,
+            "url": "/"
+        }
+    ]
+}
