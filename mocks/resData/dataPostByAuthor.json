@@ -1,0 +1,56 @@
+[
+    {
+        "id": "1",
+        "image": "/assets/images/post1.png",
+        "type": "Categary",
+        "author": "FintechX",
+        "date": "27 Mar 2023",
+        "title": "Don't treat us as politica football, TikTok tells Australian panel",
+        "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Iaculis porttitor fermentum dictum dignissim urna vel, enim. Fusce molestie nunc."
+    },
+    {
+        "id": "2",
+        "image": "/assets/images/post2.png",
+        "type": "Categary",
+        "author": "FintechX",
+        "date": "27 Mar 2023",
+        "title": "World mourns death of basketball legend Kobe Bryant",
+        "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Iaculis porttitor fermentum dictum dignissim urna vel, enim. Fusce molestie nunc."
+    },
+    {
+        "id": "3",
+        "image": "/assets/images/post3.png",
+        "type": "Categary",
+        "author": "FintechX",
+        "date": "27 Mar 2023",
+        "title": "Microsoft Microsoft Microsoft - What is going on",
+        "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Iaculis porttitor fermentum dictum dignissim urna vel, enim. Fusce molestie nunc."
+    },
+    {
+        "id": "4",
+        "image": "/assets/images/post4.png",
+        "type": "Categary",
+        "author": "FintechX",
+        "date": "27 Mar 2023",
+        "title": "Searching For Dolphins & Whales Off Island",
+        "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Iaculis porttitor fermentum dictum dignissim urna vel, enim. Fusce molestie nunc."
+    },
+    {
+        "id": "5",
+        "image": "/assets/images/post5.png",
+        "type": "Categary",
+        "author": "FintechX",
+        "date": "27 Mar 2023",
+        "title": "Apple kills development of its AirPort wireless",
+        "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Iaculis porttitor fermentum dictum dignissim urna vel, enim. Fusce molestie nunc."
+    },
+    {
+        "id": "6",
+        "image": "/assets/images/post6.png",
+        "type": "Categary",
+        "author": "FintechX",
+        "date": "27 Mar 2023",
+        "title": "London fashion photographer aspiring models",
+        "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Iaculis porttitor fermentum dictum dignissim urna vel, enim. Fusce molestie nunc."
+    }
+]

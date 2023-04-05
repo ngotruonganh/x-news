@@ -24,7 +24,7 @@ export default function Footer() {
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque,
               pellentesque dictum posuere id diam rutrum.
             </p>
-            <div className="topsocial d-flex justify-content-around">
+            <div className="social d-flex justify-content-around">
               <a
                 href="#"
                 data-toggle="tooltip"
@@ -32,7 +32,7 @@ export default function Footer() {
                 title="Facebook"
                 className="bg-primary d-flex justify-content-center align-items-center rounded-circle"
               >
-                <i className="fa fa-facebook" />
+                <img src="/assets/images/facebook.svg" />
               </a>
               <a
                 href="#"
@@ -41,7 +41,7 @@ export default function Footer() {
                 title="Twitter"
                 className="bg-info d-flex justify-content-center align-items-center rounded-circle"
               >
-                <i className="fa fa-twitter" />
+                <img src="/assets/images/twitter.svg" />
               </a>
               <a
                 href="#"
@@ -50,7 +50,7 @@ export default function Footer() {
                 title="Instagram"
                 className="bg-instagram d-flex justify-content-center align-items-center rounded-circle"
               >
-                <i className="fa fa-instagram" />
+                <img src="/assets/images/instagram.svg" />
               </a>
               <a
                 href="#"
@@ -59,7 +59,7 @@ export default function Footer() {
                 title="Youtube"
                 className="bg-danger d-flex justify-content-center align-items-center rounded-circle"
               >
-                <i className="fa fa-youtube-play" />
+                <img src="/assets/images/youtube.svg" />
               </a>
             </div>
           </div>

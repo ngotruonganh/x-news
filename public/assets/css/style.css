@@ -223,6 +223,51 @@ a {
     margin-bottom: 0;
 }
 
+.social {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 10px;
+}
+
+.social a {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.social .fa {
+    font-size: 10px;
+    color: white !important;
+}
+
+.social .facebook {
+    background-color: rgba(66, 129, 255, 1);
+}
+
+.social .instagram {
+    background-color: rgba(194, 55, 133, 1);
+}
+
+.social .youtube {
+    background-color: rgba(239, 80, 67, 1);
+}
+
+.social .twitter {
+    background-color: rgba(66, 192, 245, 1);
+}
+
+.social .behance {
+    background-color: rgba(66, 129, 255, 1);
+}
+
+.social .dribble {
+    background-color: rgba(247, 103, 157, 1);
+}
+
+.social .email {
+    background-color: rgba(197, 33, 30, 1);
+}
+
 .topsocial a {
     width: 40px;
     height: 40px;
@@ -539,7 +584,7 @@ div.tab button:hover {
     width: 33.33333%;
 }
 
-.half-side{
+.half-side {
     width: 50% !important;
 }
 
@@ -831,10 +876,10 @@ div.tab button:hover {
 }
 
 .page-link {
-    background-color: #edeff2 !important;
-    border: 0 dashed #e2e2e2;
+    background-color: white !important;
+    border: 1px solid rgba(250, 191, 44, 1);
     border-radius: 0;
-    color: #a3a5a8 !important;
+    color: rgba(250, 191, 44, 1) !important;
     display: block;
     font-size: 14px;
     line-height: 1;
@@ -846,7 +891,24 @@ div.tab button:hover {
 
 .page-link:hover,
 .page-link:focus {
-    color: #111 !important;
+    color: white !important;
+    background-color: rgba(250, 191, 44, 1) !important;
+    border: 1px solid rgba(250, 191, 44, 1);
+}
+
+.page-back,
+.page-next {
+    background-color: rgba(250, 191, 44, 1) !important;
+    border: 1px solid rgba(250, 191, 44, 1);
+    border-radius: 0;
+    color: white !important;
+    display: block;
+    font-size: 14px;
+    line-height: 1;
+    margin-left: 6px;
+    padding: 0.8rem 0.8rem;
+    position: relative;
+    text-transform: capitalize;
 }
 
 .page-item:first-child .page-link {
