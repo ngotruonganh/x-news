@@ -1,15 +1,16 @@
 import Link from 'next/link'
 import { useRouter } from 'next/router'
-import React from 'react'
+import React, { useEffect } from 'react'
 import { getTagColor } from '../../utils/func'
 import classNames from 'classnames'
 
 export default function MasonryBox({ className, data, desc = false,meta=false ,isVideo="false"}) {
     const router = useRouter()
+
     return (
         <div className={className}>
             <span className={classNames("tag",getTagColor(data.type))} >{data.type}</span>
-            <img src={data.image} alt="" className="img-fluid" />
+            {data.image && <img src={data.image} alt="" className="img-fluid" />}
             <div className="shadoweffect"
                 onClick={() => {
                     router.push({
