@@ -30,7 +30,7 @@ export default function SectionFive({ data }) {
                         </div>
                     </div>
                 </div>
-                <div className="col-lg-9 col-md-9 col-sm-12 col-xs-12 d-flex justify-content-between m-0 p-0">
+                <div className="col-lg-9 col-md-9 col-sm-12 col-xs-12 d-flex justify-content-betwee m-0 p-0">
                     <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12">
                         <div className='masonry-box'>
                             <div className="section-title">
@@ -62,7 +62,7 @@ export default function SectionFive({ data }) {
                             </div>
                             <div className="row">
                                 <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                    <BlogBox className="blog-meta big-meta" data={data[1]} desc={true} />
+                                    <BlogBox className="blog-meta big-meta" data={data[2]} desc={true} />
                                 </div>
                             </div>
                         </div>

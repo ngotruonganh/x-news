@@ -59,7 +59,7 @@ export default function SectionFour({ data }) {
                         })}
                     </div>
                     <div className='ads-wrapper mt-3'>
-                       <img src="mocks/images/ads.svg"/>
+                       <img src="/mocks/images/ads.svg"/>
                        <div className='ads-item'>Ad</div>
                     </div>
                 </div>

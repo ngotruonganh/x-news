@@ -11,10 +11,10 @@ export default function SectionThird({ data }) {
                         <div className="title">Categoty</div>
                         <div>
                             <button className='btn m-1 btn-left'>
-                                <img src="assets/icons/icon-left.svg"/>
+                                <img src="/assets/icons/icon-left.svg"/>
                             </button>
                             <button className='btn m-1 btn-right'>
-                                <img src="assets/icons/icon-right.svg"/>
+                                <img src="/assets/icons/icon-right.svg"/>
                             </button>
                         </div>
                     </div>

@@ -33,10 +33,10 @@ export default function BlogBox({ className, data, desc = false, showName = fals
                 >
                     <div>
                         <div className='meta'><div className='auth'>{data.author}</div> - <div className='date'>{data.date}</div> </div>
-                        <h4 className='title'>{data.title}</h4>
+                        <h4 className='title text-wrap'>{data.title}</h4>
                     </div>
                 </Link>
-                {desc && <p className='desc'>{data.desc}</p>}
+                {desc && <p className='desc text-wrap'>{data.desc}</p>}
                 {showName && <small><a href={data.url} >{data.type}</a></small>}
             </div>
         </div>

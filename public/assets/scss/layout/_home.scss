@@ -84,51 +84,9 @@
         }
     }
 
-    .subscribe-wrapper {
-        text-align: center;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-color: #DEDADA;
-        height: 300px;
-        margin-left: 5px;
-        .title {
-            font-style: normal;
-            font-weight: 800;
-            font-size: 18px;
-            line-height: 163.9%;
-            color: #2D2D2D;
-            margin: 10px;
+   
 
-
-        }
-
-        input {
-            width: 220px;
-            height: 40px;
-            background: #FFFFFF;
-            padding: 10px;
-            text-align: center;
-            outline: none;
-        }
-
-
-    }
-
-    button {
-        margin-top: 10px;
-        background: #FABF2C;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        padding: 8px 32px;
-        gap: 10px;
-        width: 220px;
-        height: 38px;
-        outline: none;
-        border: none;
-    }
+    
 
     .ads-wrapper {
         display: flex;

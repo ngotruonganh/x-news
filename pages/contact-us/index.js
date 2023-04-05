@@ -7,7 +7,7 @@ export default function ContactUs() {
             <div className="contact-wrapper">
                 <div className="contact-left">
                     <div className="link">
-                        <img src="/assets/icons/contact-us-1.svg" alt="" />
+                        <img src="//assets/icons/contact-us-1.svg" alt="" />
                         Home / Contact Us
                     </div>
                     <div className="name">Contact Us</div>
@@ -50,21 +50,21 @@ export default function ContactUs() {
                 <div className="contact-right">
                     <div className="item">
                         <div className="img">
-                            <img src="/assets/icons/contact-us-2.svg" alt="" />
+                            <img src="//assets/icons/contact-us-2.svg" alt="" />
                         </div>
                         <div className="title">Address</div>
                         <div className="desc">House #5, Road %#25, Dhanmondi, Dhaka - 256</div>
                     </div>
                     <div className="item">
                         <div className="img">
-                            <img src="/assets/icons/contact-us-3.svg" alt="" />
+                            <img src="//assets/icons/contact-us-3.svg" alt="" />
                         </div>
                         <div className="title">Emaill address</div>
                         <div className="desc">info@fintechx.com</div>
                     </div>
                     <div className="item">
                         <div className="img">
-                            <img src="/assets/icons/contact-us-4.svg" alt="" />
+                            <img src="//assets/icons/contact-us-4.svg" alt="" />
                         </div>
                         <div className="title">Phone</div>
                         <div className="desc">+880 123 456 7890</div>
