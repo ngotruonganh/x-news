@@ -22,10 +22,10 @@ export default function Header() {
     <>
       <div id="wrapper">
         <div className="topbar-section p-0">
-          <div className="container-fluid">
+          <div className="container">
             <div className="row">
               <div className="col-lg-3 col-md-6 col-sm-6 hidden-xs-down d-flex align-items-center">
-                <TopSocial className="topsocial d-flex" />
+                <TopSocial className="topsocial d-flex flex-column align-items-start" />
               </div>
               <div className="col-lg-6 hidden-md-down">
                 <TopMenu />
@@ -39,7 +39,7 @@ export default function Header() {
         {showSearch && <SearchFrom onClose={() => setShowSearch(false)} />}
         <div className="layout-wrapper logo-layout">
           <div className="header-section mt-2">
-            <div className="container-fluid">
+            <div className="container">
               <div className="row">
                 <div className="col-12 col-md-4 d-flex align-items-center">
                   <div className="logo">
@@ -68,9 +68,12 @@ export default function Header() {
                     </div>
                   </div>
                   <div className="read-more">
-                    <button className="bg-warning border border-0 p-2 font-weight-bold">
+                    <a
+                      href="#"
+                      className="bg-warning border border-0 p-2 font-weight-bold"
+                    >
                       READ MORE
-                    </button>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -79,7 +82,7 @@ export default function Header() {
         </div>
       </div>
       <header className="header w-100">
-        <nav className="navbar navbar-inverse navbar-toggleable-md">
+        <nav className="navbar navbar-inverse navbar-toggleable-md container">
           <button
             className="navbar-toggler "
             type="button"
