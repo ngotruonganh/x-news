@@ -4,7 +4,7 @@ import React from 'react'
 import { getTagColor } from '../../utils/func'
 import classNames from 'classnames'
 
-export default function MasonryBox({ className, data, desc = false,meta=false }) {
+export default function MasonryBox({ className, data, desc = false,meta=false ,isVideo="false"}) {
     const router = useRouter()
     return (
         <div className={className}>
@@ -13,8 +13,8 @@ export default function MasonryBox({ className, data, desc = false,meta=false })
             <div className="shadoweffect"
                 onClick={() => {
                     router.push({
-                        pathname: `${data.type.toLowerCase()}/[blog]`,
-                        query: { blog: data.url }
+                        pathname: `posts/[chapts]`,
+                        query: { chapts: data.url }
 
                     })
                 }}

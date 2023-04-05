@@ -1,9 +1,38 @@
+.section-wrapper{
+    padding-top: 20px;
+}
+
+.section-first-wrapper {
+    .blog-meta {
+        .title {
+            font-size: 20px;
+            color: white;
+        }
+    }
+}
+
+.masonry-box {
+    h4 {
+        font-weight: 600;
+        font-size: 20px;
+    }
+
+    .desc {
+        color: rgba(57, 57, 57, 0.6);
+        font-weight: 250;
+        font-style: normal;
+    }
+}
+
+
 .section-third-wrapper {
     .list-news-wrapper {
         justify-content: space-between;
     }
+
     .list-item-wrapper {
         height: 180px;
+
         img {
             width: 240px;
             height: 180px;
@@ -11,19 +40,21 @@
     }
 }
 
-.section-four-wrapper{
+
+.section-four-wrapper {
     .ads-wrapper {
         justify-content: center;
         display: flex;
         padding-left: 5px;
         padding-top: 5px;
         position: relative;
-    
+
         img {
             width: 100%;
+            height: 350px;
             object-fit: cover;
         }
-    
+
         .ads-item {
             position: absolute;
             top: 45%;
@@ -32,7 +63,7 @@
             color: white;
         }
     }
-    
+
 }
 
 .section-five-wrapper {
@@ -40,17 +71,19 @@
         flex-wrap: wrap;
         justify-content: space-between;
     }
+
     .list-item-wrapper {
         height: 180px;
         flex-basis: 50%;
         margin: 0;
         margin-top: 10px;
+
         img {
             width: 240px;
             height: 180px;
         }
     }
-   
+
     .subscribe-wrapper {
         text-align: center;
         display: flex;
@@ -58,7 +91,7 @@
         justify-content: center;
         background-color: #DEDADA;
         height: 300px;
-    
+        margin-left: 5px;
         .title {
             font-style: normal;
             font-weight: 800;
@@ -67,9 +100,9 @@
             color: #2D2D2D;
             margin: 10px;
 
-           
+
         }
-       
+
         input {
             width: 220px;
             height: 40px;
@@ -78,8 +111,8 @@
             text-align: center;
             outline: none;
         }
-    
-        
+
+
     }
 
     button {
@@ -97,7 +130,7 @@
         border: none;
     }
 
-    .ads-wrapper{
+    .ads-wrapper {
         display: flex;
         margin-top: 30px;
         position: relative;
@@ -109,16 +142,15 @@
         justify-content: space-between;
         align-items: center;
 
-        .hight-light{
+        .hight-light {
             color: #FABF2C !important;
         }
     }
 }
 
-.section-six-wrapper{
+.section-six-wrapper {
     .masonry-box {
-        img {
-        }
+        img {}
     }
 
 }

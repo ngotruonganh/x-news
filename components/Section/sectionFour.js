@@ -5,20 +5,14 @@ import classNames from 'classnames'
 import ListNews from '../ListNews'
 import dataTag from '../../mocks/resData/dataTag.json'
 import dataSocial from '../../mocks/resData/dataSocial.json'
+import SideTag from '../SideTag'
 export default function SectionFour({ data }) {
 
     return (
         <div className='mt-3'>
             <div className='row'>
                 <div className="col-lg-9 col-md-9 col-sm-12 col-xs-12">
-                    <div className="d-flex justify-content-between">
-                        <div >Category</div>
-                        <div>
-                            {dataTag.data.map((item, idx) => {
-                                return <span key={idx} className={classNames("tag m-1", getTagColor(item.tagSeo))} >{item.name}</span>
-                            })}
-                        </div>
-                    </div>
+                    <SideTag title="Category"/>
                     <hr className='throw-line' />
                 </div>
                 <div className="col-lg-3 col-md-3 col-sm-12 col-xs-12">

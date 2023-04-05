@@ -6,28 +6,30 @@ import dataSection2 from '../mocks/resData/dataSection2.json'
 import dataSection3 from '../mocks/resData/dataSection3.json'
 import dataSection4 from '../mocks/resData/dataSection4.json'
 import dataSection5 from '../mocks/resData/dataSection5.json'
+import dataSection6 from '../mocks/resData/dataSection6.json'
+
 export default function Home() {
 	return (
 		<Layout>
-			<Loading />
+			{/* <Loading /> */}
 			<div  className='layout-wrapper'>
-				<div >
+				<div className='section-wrapper section-first-wrapper'>
 					<SectionFirst data={dataSection1.data} />
 				</div>
-				<div>
+				<div className='section-wrapper section-second-wrapper'>
 					<SectionSecond data={dataSection2.data} />
 				</div>
-				<div className='section-third-wrapper'>
+				<div className='section-wrapper section-third-wrapper'>
 					<SectionThird data={dataSection3.data} />
 				</div>
-				<div className='section-four-wrapper'>
+				<div className='section-wrapper section-four-wrapper'>
 					<SectionFour data={dataSection4.data} />
 				</div>
-				<div className='section-five-wrapper'>
+				<div className='section-wrapper section-five-wrapper'>
 					<SectionFive data={dataSection5.data} />
 				</div>
-				<div className='section-six-wrapper'>
-					<SectionSix data={dataSection5.data} />
+				<div className='section-wrapper section-six-wrapper'>
+					<SectionSix data={dataSection6.data} />
 				</div>
 				<hr className="invis" />
 			</div>

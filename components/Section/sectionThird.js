@@ -7,14 +7,14 @@ export default function SectionThird({ data }) {
         <div className='mt-3'>
             <div className='row'>
                 <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <div className="d-flex justify-content-between">
-                        <div >Categoty</div>
+                    <div className="d-flex justify-content-between side-tag-wrapper">
+                        <div className="title">Categoty</div>
                         <div>
-                            <button className='btn btn-primary m-1'>
-                                <i className="fa-solid fa-angle-left"></i>
+                            <button className='btn m-1 btn-left'>
+                                <img src="assets/icons/icon-left.svg"/>
                             </button>
-                            <button className='btn m-1'>
-                                <i className="fa-solid fa-angle-right"></i>
+                            <button className='btn m-1 btn-right'>
+                                <img src="assets/icons/icon-right.svg"/>
                             </button>
                         </div>
                     </div>
@@ -23,7 +23,7 @@ export default function SectionThird({ data }) {
             </div>
             <div className='row'>
                 <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <div className="masonry-blog row">
+                    <div className="masonry-blog">
                         <div className="masonry-full">
                             <MasonryBox
                                 className="masonry-box post-media main"

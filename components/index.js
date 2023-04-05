@@ -4,6 +4,7 @@ import SectionThird from "./Section/sectionThird";
 import SectionFour from './Section/sectionFour';
 import SectionFive from './Section/sectionFive';
 import SectionSix from './Section/sectionSix';
+import SideTag from "./SideTag";
 export{
     SectionFirst,
     SectionSecond,
@@ -11,4 +12,5 @@ export{
     SectionFour,
     SectionFive,
     SectionSix,
+    SideTag
 }
