@@ -1,63 +1,63 @@
 export const menuList = [
     {
-        name:'Home',
-        title:'',
-        url:'/'
+        name: 'Home',
+        title: '',
+        url: '/'
     },
     {
-        name: 'Markets',
+        name: 'Category',
         title: '',
-        url: '/markets'
+        url: '/category'
     },
     {
-        name: 'Business',
+        name: 'Category',
         title: '',
-        url: '/business'
+        url: '/category2'
     },
     {
-        name: 'Tech',
+        name: 'Category',
         title: '',
-        url: '/tech'
+        url: '/category3'
     },
     {
-        name: 'Policy',
+        name: 'Category',
         title: '',
-        url: '/policy'
+        url: '/category4'
     },
     {
-        name: 'Indices',
+        name: 'Category',
         title: '',
-        url: 'indices'
+        url: '/category5'
     },
     {
-        name: 'TV & Videos',
+        name: 'Category',
         title: '',
-        url: 'tv-videos'
+        url: '/categoryx'
     },
     {
-        name: 'Podcasts',
+        name: 'Category',
         title: '',
-        url: ''
+        url: '/categoryx'
     },
     {
-        name: 'Crypto Explainer+',
+        name: 'Category',
         title: '',
-        url: ''
+        url: '/categoryx'
     },
     {
-        name: 'Events',
+        name: 'Category',
         title: '',
-        url: ''
+        url: '/categoryx'
     },
     {
-        name: 'Research',
+        name: 'Category',
         title: '',
-        url: ''
+        url: '/categoryx'
     },
     {
-        name: 'About',
+        name: 'Category',
         title: '',
-        url: ''
+        url: '/categoryx'
     }
 ]
 
@@ -1242,15 +1242,15 @@ export const menuSort = [
     },
     {
         type: 'top-traded',
-        name: 'Top Traded' 
+        name: 'Top Traded'
     },
     {
         type: 'top-gainer',
-        name: 'Top Gainer' 
+        name: 'Top Gainer'
     },
     {
         type: 'top-loser',
-        name: 'Top Loser' 
+        name: 'Top Loser'
     }
 
 ]
