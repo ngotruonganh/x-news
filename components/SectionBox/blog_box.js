@@ -7,9 +7,9 @@ export default function BlogBox({ className, data, desc = false, showName = fals
             <div className="post-media">
                 <Link
                     href={{
-                        pathname: `${data.type.toLowerCase()}/[blog]`,
+                        pathname: `/posts/[chapt]`,
                         query: {
-                            blog: data.url
+                            chapt: data.url
                         }
                     }}
                 >
@@ -25,9 +25,9 @@ export default function BlogBox({ className, data, desc = false, showName = fals
 
                 <Link
                     href={{
-                        pathname: `${data.type.toLowerCase()}/[blog]`,
+                        pathname: `/posts/[chapt]`,
                         query: {
-                            blog: data.url
+                            chapt: data.url
                         }
                     }}
                 >
