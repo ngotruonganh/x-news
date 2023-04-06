@@ -20,6 +20,11 @@ function getTagColor(type) {
     }
 }
 
+function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+}
+
 export {
-    getTagColor
+    getTagColor,
+    sleep
 }

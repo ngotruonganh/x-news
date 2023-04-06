@@ -3,8 +3,18 @@ import Layout from "../../layout";
 import Author from "./author";
 import data from "../../mocks/resData/dataPostByAuthor.json";
 import Pagination from "../../components/Pagination";
+import { getHome } from "../api/home";
 
-export default function AuthorPage() {
+export async function getServerSideProps(context) {
+  // Fetch data from external API
+  let menuCate = await getHome()
+
+  // Pass data to the page via props
+  return { props: { menuCate: menuCate } }
+}
+
+export default function AuthorPage({menuCate}) {
+  console.log(menuCate);
   return (
     <Layout>
       <div className="layout-wrapper">
@@ -19,7 +29,7 @@ export default function AuthorPage() {
               <>
                 <div key={item.id} className="col-12 col-md-4">
                   <div className="position-relative">
-                    <img className="w-100" src={item.image} />
+                    <img className="w-100" src={item.image} alt=""/>
                     <span className="position-absolute top-0 start-0">
                       {item.type}
                     </span>

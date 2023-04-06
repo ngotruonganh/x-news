@@ -15,6 +15,7 @@ export default function NavigationMenu({ menu, onClickMenu }) {
                   href={{
                     pathname: item.url,
                   }}
+                  passHref
                 >
                   <span
                     className={

@@ -77,7 +77,7 @@ export default function SectionFive({ data }) {
                         {dataCategory.data.map((item, idx) => {
                             return <div className="rank-item" key={idx}>
                                 <span className='title'>
-                                    <img src="/assets/icons/icon-right.svg" />
+                                    <img src="/assets/icons/icon-right.svg" alt=''/>
                                     {item.name}
                                 </span>
                                 <span className={classNames("total", getTagColor(item.tagSeo))} >{item.total}</span>

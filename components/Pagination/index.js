@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { useState } from "react";
 
 function Pagination({ postPerPage, totalPost }) {
@@ -9,24 +10,24 @@ function Pagination({ postPerPage, totalPost }) {
     <nav>
       <ul className="pagination">
         <li className="page-item">
-          <a className="page-back" href="#" aria-label="Previous">
+          <Link className="page-back" href="/" aria-label="Previous" passHref>
             <img src="/assets/images/back.svg" alt="back" />
             <span className="sr-only">Previous</span>
-          </a>
+          </Link>
         </li>
-        {pageNumber.map((Number) => (
-          <li className="page-item">
-            <a className="page-link" href="#">
+        {pageNumber.map((Number,idx) => (
+          <li className="page-item" key={idx}>
+            <Link className="page-link" href="/" passHref>
               {Number}
-            </a>
+            </Link>
           </li>
         ))}
         <li className="page-item">
-          <a className="page-next" href="#" aria-label="Next">
+          <Link className="page-next" href="/" aria-label="Next" passHref>
             <img src="/assets/images/next.svg" alt="next" />
 
             <span className="sr-only">Next</span>
-          </a>
+          </Link>
         </li>
       </ul>
     </nav>

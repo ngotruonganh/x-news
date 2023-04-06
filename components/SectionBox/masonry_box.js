@@ -30,6 +30,7 @@ export default function MasonryBox({ className, data, desc = false, meta = false
                                     blog: data.url
                                 }
                             }}
+                            passHref
                         >
                             <div className="title">
                                 {meta &&

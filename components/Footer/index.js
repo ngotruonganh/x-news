@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 export default function Footer() {
@@ -10,10 +11,10 @@ export default function Footer() {
           <img className="w-100" src="/assets/images/follow-us-3.png" alt="" />
           <img className="w-100" src="/assets/images/follow-us-4.png" alt="" />
           <img className="w-100" src="/assets/images/follow-us-5.png" alt="" />
-          <a className="follow-us" href="#">
+          <div>
             <img src="/assets/images/instargram.png" alt="follow us" />
             <span>Follow us</span>
-          </a>
+          </div>
         </div>
       </div>
       <div className="layout py-5">
@@ -25,42 +26,46 @@ export default function Footer() {
               pellentesque dictum posuere id diam rutrum.
             </p>
             <div className="social d-flex justify-content-around">
-              <a
-                href="#"
+              <Link
+                href="/"
                 data-toggle="tooltip"
                 data-placement="bottom"
                 title="Facebook"
                 className="bg-primary d-flex justify-content-center align-items-center rounded-circle"
+                passHref
               >
-                <img src="/assets/images/facebook.svg" />
-              </a>
-              <a
-                href="#"
+                <img src="/assets/images/facebook.svg" alt=""/>
+              </Link>
+              <Link
+                href="/"
                 data-toggle="tooltip"
                 data-placement="bottom"
                 title="Twitter"
                 className="bg-info d-flex justify-content-center align-items-center rounded-circle"
+                passHref
               >
-                <img src="/assets/images/twitter.svg" />
-              </a>
-              <a
-                href="#"
+                <img src="/assets/images/twitter.svg" alt=""/>
+              </Link>
+              <Link
+                href="/"
                 data-toggle="tooltip"
                 data-placement="bottom"
                 title="Instagram"
                 className="bg-instagram d-flex justify-content-center align-items-center rounded-circle"
+                passHref
               >
-                <img src="/assets/images/instagram.svg" />
-              </a>
-              <a
-                href="#"
+                <img src="/assets/images/instagram.svg" alt=""/>
+              </Link>
+              <Link
+                href="/"
                 data-toggle="tooltip"
                 data-placement="bottom"
                 title="Youtube"
                 className="bg-danger d-flex justify-content-center align-items-center rounded-circle"
+                passHref
               >
-                <img src="/assets/images/youtube.svg" />
-              </a>
+                <img src="/assets/images/youtube.svg" alt=""/>
+              </Link>
             </div>
           </div>
           <div className="col-12 col-md-3 mt-3 mt-md-0">

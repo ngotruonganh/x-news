@@ -6,6 +6,7 @@ import { menuList } from "../data/dataMenu";
 import classNames from "classnames";
 import SearchFrom from "../SearchForm";
 import TopWeather from "./top_weather";
+import Link from "next/link";
 export default function Header() {
   const [open, setOpen] = useState(false);
   const [showSearch, setShowSearch] = useState(false);
@@ -43,20 +44,20 @@ export default function Header() {
               <div className="row">
                 <div className="col-12 col-md-4 d-flex align-items-center">
                   <div className="logo">
-                    <a href="/">
+                    <Link href="/" passHref>
                       <img src="/assets/images/logo.svg" alt="main logo" />
-                    </a>
+                    </Link>
                   </div>
                 </div>
                 <div className="col-12 col-md-8 position-relative mt-3 mt-md-0">
                   <div className="logo">
-                    <a href="/">
+                    <Link href="/" passHref>
                       <img
                         className="readmore-img w-100"
                         src="/assets/images/read-more.png"
                         alt="main logo"
                       />
-                    </a>
+                    </Link>
                   </div>
                   <div className="in-image">
                     <div className="font-weight-bold">
@@ -68,12 +69,13 @@ export default function Header() {
                     </div>
                   </div>
                   <div className="read-more">
-                    <a
-                      href="#"
+                    <Link
+                      href="/"
                       className="bg-warning border border-0 p-2 font-weight-bold"
+                      passHref
                     >
                       READ MORE
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>

@@ -1,4 +1,5 @@
 import classNames from 'classnames'
+import Link from 'next/link'
 import React from 'react'
 export default function NumPage({ total, current, num, onChangePage }) {
 
@@ -12,9 +13,9 @@ export default function NumPage({ total, current, num, onChangePage }) {
                 key={i}
                 className="page-item"
             >
-                <a className={classNames("page-link", current - 1 == i && "page-link-active")} href="#"
+                <Link className={classNames("page-link", current - 1 == i && "page-link-active")} href="/"
                     onClick={() => onChangePage(i + 1)}
-                >{i + 1}</a>
+                >{i + 1}</Link>
             </li>)
         }
 
@@ -27,43 +28,43 @@ export default function NumPage({ total, current, num, onChangePage }) {
                 result = result.slice(current - 1, current + 5)
                 result.push(
                     <li key={98} className="page-item">
-                        <a className="page-link" href="#"
+                        <Link className="page-link" href="/"
                             onClick={() => onChangePage(page)}
-                        >..</a>
+                        >..</Link>
                     </li>
                 )
 
                 result.push(
                     <li key={99} className="page-item">
-                        <a className="page-link" href="#"
+                        <Link className="page-link" href="/"
                             onClick={() => onChangePage(current + 1)}
-                        >&#62;</a>
+                        >&#62;</Link>
                     </li>
                 )
 
             if (current > 1)
                 result.unshift(
                     <li key={-1} className="page-item">
-                        <a className="page-link" href="#"
+                        <Link className="page-link" href="/"
                             onClick={() => onChangePage(current - 1)}
-                        >&#60;</a>
+                        >&#60;</Link>
                     </li>
                 )
         }
 
         result.unshift(
             <li key={101} className="page-item">
-                <a className="page-link" href="#"
+                <Link className="page-link" href="/"
                     onClick={() => onChangePage(1)}
-                >&#60;&#60;</a>
+                >&#60;&#60;</Link>
             </li>
         )
 
         result.push(
             <li key={102} className="page-item">
-                <a className="page-link" href="#"
+                <Link className="page-link" href="/"
                     onClick={() => onChangePage(page)}
-                >&#62;&#62;</a>
+                >&#62;&#62;</Link>
             </li>
         )
 

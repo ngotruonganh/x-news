@@ -7,8 +7,17 @@ import dataSection3 from '../mocks/resData/dataSection3.json'
 import dataSection4 from '../mocks/resData/dataSection4.json'
 import dataSection5 from '../mocks/resData/dataSection5.json'
 import dataSection6 from '../mocks/resData/dataSection6.json'
+import { getHome } from "./api/home";
 
-export default function Home() {
+export async function getServerSideProps(context) {
+  // Fetch data from external API
+  let menuCate = await getHome()
+
+  // Pass data to the page via props
+  return { props: { menuCate: menuCate } }
+}
+export default function Home({menuCate}) {
+	console.log(menuCate);
 	return (
 		<Layout>
 			{/* <Loading /> */}
