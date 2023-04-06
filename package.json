@@ -4,6 +4,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "export": "next export",
     "start": "next start",
     "lint": "next lint",
     "deploy": "aws --region us-east-1 s3 sync ./.next s3://fintechx-news --delete",
