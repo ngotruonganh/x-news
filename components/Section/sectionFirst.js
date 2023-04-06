@@ -9,7 +9,8 @@ export default function SectionFirst({ data }) {
                     <MasonryBox
                         className="masonry-box post-media main"
                         data={data[0]}
-                        desc={true}
+                        desc={false}
+                        meta={true}
                     />
                 </div>
                 <div className="masonry-right ">
@@ -17,19 +18,21 @@ export default function SectionFirst({ data }) {
                         <MasonryBox
                             className="masonry-box small-box post-media"
                             data={data[1]}
-                            desc={true}
-                            
+                            desc={false}
+                            meta={true}
                         />
                         <MasonryBox
                             className="masonry-box small-box post-media"
                             data={data[2]}
-                            desc={true}
+                            desc={false}
+                            meta={true}
                         />
                     </div>
                     <MasonryBox
                         className="masonry-box post-media"
                         data={data[3]}
-                        desc={true}
+                        desc={false}
+                        meta={true}
                     />
                 </div>
             </div>
