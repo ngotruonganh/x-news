@@ -171,9 +171,10 @@ a {
     object-fit: fill;
 }
 
-.bg-nav-link  {
+.bg-nav-link {
     background-color: rgba(250, 191, 44, 1);
 }
+
 .readmore-img {
     height: 120px;
 }
@@ -287,7 +288,7 @@ a {
     border-radius: 50%;
 }
 
-.topsocial span{
+.topsocial span {
     white-space: nowrap;
 }
 
@@ -669,6 +670,11 @@ div.tab button:hover {
     background-color: rgba(57, 57, 57, 1);
 }
 
+.responsive {
+    width: 100%;
+    height: auto;
+}
+
 .footer .button {
     color: black;
     background-color: rgba(250, 191, 44, 1);
@@ -677,7 +683,7 @@ div.tab button:hover {
 .footer .line {
     width: 100%;
     border-radius: 8px;
-    height: 2px;
+    height: 1px;
     background-color: rgba(255, 255, 255, 1);
     margin-bottom: 1rem;
 }
@@ -685,7 +691,7 @@ div.tab button:hover {
 .footer .line::after {
     content: '';
     display: block;
-    border-bottom: 2px solid rgba(250, 191, 44, 1);
+    border-bottom: 1px solid rgba(250, 191, 44, 1);
     margin-bottom: -2px;
     max-width: 200px;
     width: 25%;
@@ -705,7 +711,7 @@ div.tab button:hover {
 }
 
 .footer .gallery-item {
-    width: 30%;
+    width: 32%;
 }
 
 .footer .follow-us {

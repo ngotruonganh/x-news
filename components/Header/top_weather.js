@@ -1,11 +1,11 @@
-import React from "react";
-
 export default function TopWeather({ className }) {
   return (
     <div className={className}>
       <div className="weather mr-2">
         <img src="/assets/images/haze-fill1.svg" alt="weather" />
-        <span>15 * c</span>
+        <span>
+          15<sup>&deg;C</sup>
+        </span>
         <span>New York</span>
       </div>
       <div className="weather">
