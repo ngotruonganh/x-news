@@ -5,57 +5,57 @@ export const menuList = [
         url: '/'
     },
     {
-        name: 'Category',
+        name: 'CATEGORY',
         title: '',
         url: '/category'
     },
     {
-        name: 'Category',
+        name: 'CATEGORY',
         title: '',
         url: '/category2'
     },
     {
-        name: 'Category',
+        name: 'CATEGORY',
         title: '',
         url: '/category3'
     },
     {
-        name: 'Category',
+        name: 'CATEGORY',
         title: '',
         url: '/category4'
     },
     {
-        name: 'Category',
+        name: 'CATEGORY',
         title: '',
         url: '/category5'
     },
     {
-        name: 'Category',
+        name: 'CATEGORY',
         title: '',
         url: '/categoryx'
     },
     {
-        name: 'Category',
+        name: 'CATEGORY',
         title: '',
         url: '/categoryx'
     },
     {
-        name: 'Category',
+        name: 'CATEGORY',
         title: '',
         url: '/categoryx'
     },
     {
-        name: 'Category',
+        name: 'CATEGORY',
         title: '',
         url: '/categoryx'
     },
     {
-        name: 'Category',
+        name: 'CATEGORY',
         title: '',
         url: '/categoryx'
     },
     {
-        name: 'Category',
+        name: 'CATEGORY',
         title: '',
         url: '/categoryx'
     }

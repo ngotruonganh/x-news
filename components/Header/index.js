@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import TopMenu from "./top_menu";
 import SearchBar from "./search_bar";
 import NavigationMenu from "./nav_menu";
@@ -25,58 +25,54 @@ export default function Header() {
         <div className="topbar-section p-0">
           <div className="layout">
             <div className="row">
-              <div className="col-12 col-lg-3 d-flex justify-content-start align-items-center">
-                <TopWeather className="topsocial d-flex flex-lg-column flex-xl-row" />
-              </div>
-              <div className="col-12 col-lg-6">
+              <div className="col-12 col-lg-9 d-flex flex-column flex-lg-row justify-content-start align-items-start align-items-lg-center mt-2 mt-lg-0">
+                <TopWeather className="topsocial d-flex mr-5" />
                 <TopMenu />
               </div>
-              <div className="col-12 col-lg-3 d-flex align-items-center">
+              <div className="col-12 col-lg-3 d-flex justify-content-end align-items-center my-2 my-lg-0">
                 <SearchBar onClickSearch={onClickSearch} />
               </div>
             </div>
           </div>
         </div>
         {showSearch && <SearchFrom onClose={() => setShowSearch(false)} />}
-        <div className="layout-wrapper logo-layout">
-          <div className="header-section mt-2">
-            <div className="layout">
-              <div className="row">
-                <div className="col-12 col-md-4 d-flex align-items-center">
-                  <div className="logo">
-                    <Link href="/" passHref>
-                      <img src="/assets/images/logo.svg" alt="main logo" />
-                    </Link>
+        <div className="header-section mt-2">
+          <div className="layout">
+            <div className="row d-flex justify-content-between">
+              <div className="col-12 col-md-4 d-flex align-items-center">
+                <div className="logo">
+                  <Link href="/" passHref>
+                    <img src="/assets/images/logo.svg" alt="main logo" />
+                  </Link>
+                </div>
+              </div>
+              <div className="col-12 col-md-8 position-relative mt-3 mt-md-0">
+                <div className="logo">
+                  <Link href="/" passHref>
+                    <img
+                      className="readmore-img w-100"
+                      src="/assets/images/read-more.png"
+                      alt="main logo"
+                    />
+                  </Link>
+                </div>
+                <div className="in-image">
+                  <div className="font-weight-bold">
+                    <p className="text-white m-0">
+                      NFTBOOKS <br />
+                      Best Platform for NFT Book
+                    </p>
+                    <p className="text-warning m-0">Experience the change!</p>
                   </div>
                 </div>
-                <div className="col-12 col-md-8 position-relative mt-3 mt-md-0">
-                  <div className="logo">
-                    <Link href="/" passHref>
-                      <img
-                        className="readmore-img w-100"
-                        src="/assets/images/read-more.png"
-                        alt="main logo"
-                      />
-                    </Link>
-                  </div>
-                  <div className="in-image">
-                    <div className="font-weight-bold">
-                      <p className="text-white m-0">
-                        NFTBOOKS <br />
-                        Best Platform for NFT Book
-                      </p>
-                      <p className="text-warning m-0">Experience the change!</p>
-                    </div>
-                  </div>
-                  <div className="read-more">
-                    <Link
-                      href="/"
-                      className="bg-warning border border-0 p-2 font-weight-bold"
-                      passHref
-                    >
-                      READ MORE
-                    </Link>
-                  </div>
+                <div className="read-more">
+                  <Link
+                    href="#"
+                    className="bg-warning border border-0 p-2 font-weight-bold"
+                    passHref
+                  >
+                    READ MORE
+                  </Link>
                 </div>
               </div>
             </div>
@@ -101,7 +97,6 @@ export default function Header() {
             <NavigationMenu menu={menuList} onClickMenu={onClickMenu} />
           </div>
         </nav>
-        {/* </div> */}
       </header>
     </>
   );
