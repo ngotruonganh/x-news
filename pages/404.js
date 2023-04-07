@@ -1,6 +1,14 @@
 import Link from "next/link";
 import Layout from "../layout";
 
+export async function getInitialProps(context) {
+  // Fetch data from external API
+  let menuCate = await getHome()
+
+  // Pass data to the page via props
+  return { props: { menuCate: menuCate } }
+}
+
 export default function Custom404() {
   return (
     <Layout>

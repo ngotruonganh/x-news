@@ -9,7 +9,7 @@ import dataSection5 from '../mocks/resData/dataSection5.json'
 import dataSection6 from '../mocks/resData/dataSection6.json'
 import { getHome } from "./api/home";
 
-export async function getServerSideProps(context) {
+export async function getInitialProps(context) {
   // Fetch data from external API
   let menuCate = await getHome()
 

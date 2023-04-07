@@ -7,43 +7,18 @@ import CategoryDetail from '../../components/Category/cate_detail'
 import { dataMarkets } from '../../components/data/dataHome'
 import { getHome } from '../api/home'
 
-export async function getServerSideProps(context) {
+export async function getInitialProps(context) {
     // Fetch data from external API
     let menuCate = await getHome()
   
     // Pass data to the page via props
     return { props: { menuCate: menuCate } }
 }
+
 export default function Tech() {
     return (
         <Layout>
-            <div className="category-layout">
-                <div className="title">
-                    <h2>Tech</h2>
-                </div>
-                {/* main of cate */}
-                <Category dataCate={dataMarkets} />
-                <hr className="break-line" />
-                <div className="title">
-                    <h3>Trending in Tech</h3>
-                </div>
-                {/* trending */}
-                <Trending dataTrending={dataMarkets} />
-                <hr className="break-line" />
-                <div className="title">
-                    <h3>Features of Tech</h3>
-                </div>
-                {/* feature */}
-                <Feature dataFeature={dataMarkets} />
-                <hr className="invis" />
-                <hr className="break-line" />
-                <div className="title">
-                    <h3>More from Tech</h3>
-                </div>
-                {/* more cate */}
-                <CategoryDetail data={dataMarkets} />
-                <hr className="invis" />
-            </div>
+            hello
         </Layout>
     )
 }
