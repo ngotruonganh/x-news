@@ -4,11 +4,11 @@ import { BreadCrumb } from '../../components';
 import { getHome } from "../api/home";
 
 export async function getInitialProps(context) {
-  // Fetch data from external API
-  let menuCate = await getHome()
+    // Fetch data from external API
+    let menuCate = await getHome()
 
-  // Pass data to the page via props
-  return { props: { menuCate: menuCate } }
+    // Pass data to the page via props
+    return { props: { menuCate: menuCate } }
 }
 export default function ContactUs() {
     return (

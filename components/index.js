@@ -6,7 +6,8 @@ import SectionFive from './Section/sectionFive';
 import SectionSix from './Section/sectionSix';
 import SideTag from "./SideTag";
 import BreadCrumb from "./BreadCumb";
-export{
+import PostAuthor from "./PostAuthor";
+export {
     SectionFirst,
     SectionSecond,
     SectionThird,
@@ -14,5 +15,6 @@ export{
     SectionFive,
     SectionSix,
     SideTag,
-    BreadCrumb
+    BreadCrumb,
+    PostAuthor
 }
