@@ -2,6 +2,16 @@ import React from 'react'
 import Layout from '../../layout'
 import { dataSingle } from '../../components/data/dataIndices'
 import { FormContact } from '../../components/SectionBox'
+import Link from 'next/link'
+import { getHome } from "../api/home";
+
+export async function getServerSideProps(context) {
+  // Fetch data from external API
+  let menuCate = await getHome()
+
+  // Pass data to the page via props
+  return { props: { menuCate: menuCate } }
+}
 export default function Indices() {
     function renderSingle() {
         let result = []
@@ -34,7 +44,7 @@ export default function Indices() {
             <div className="category-layout wrap-indices">
                 <div className="wrap-indices-banner">
                     <div className="wrap-indices-banner-logo">
-                        <a href="/"><img src="/assets/images/coin-desk-indices.png" alt="main logo" /></a>
+                        <Link  href="/" passHref><img src="/assets/images/coin-desk-indices.png" alt="main logo" /></Link>
                     </div>
                     <div className="wrap-indices-banner-content">
                         <p>CoinDesk Indices are the industry standard for institutional

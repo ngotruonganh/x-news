@@ -13,11 +13,12 @@ export default function BlogBoxSquare({ className, data, desc = true }) {
                                 blog: data.url
                             }
                         }}
+                        passHref
                     >
-                        <a href="#">
+                        <Link href="/" passHref>
                             <img src={data.image} alt="" className="img-fluid" />
                             <div className="hovereffect" />
-                        </a>
+                        </Link>
                     </Link>
 
                 </div>
@@ -29,16 +30,16 @@ export default function BlogBoxSquare({ className, data, desc = true }) {
                         query: {
                             blog: data.url
                         }
-                    }}
+                    }} passHref
                 >
-                    <a href="#">
+                    <Link href="/" passHref>
                         <h4>{data.title}</h4>
-                    </a>
+                    </Link>
                 </Link>
                 {desc && <p>{data.desc}</p>}
-                <small><a href="blog-category-01.html" >{data.type}</a></small>
+                <small><Link href="blog-category-01.html" >{data.type}</Link></small>
                 <small><span>{data.date}</span></small>
-                <small><a href="blog-author.html" >{data.author}</a></small>
+                <small><Link href="blog-author.html" >{data.author}</Link></small>
             </div>
         </div>
 

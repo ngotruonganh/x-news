@@ -45,7 +45,7 @@ export default function SectionFour({ data }) {
                         {dataSocial.data.map((item, idx) => {
                             return <div className='social-item' key={idx}>
                                 <div className={classNames(item.name, "dummy d-flex")} >
-                                    <img src={item.icon} />
+                                    <img src={item.icon} alt=''/>
                                     <div>
                                         <div>
                                             {item.follwers}
@@ -59,7 +59,7 @@ export default function SectionFour({ data }) {
                         })}
                     </div>
                     <div className='ads-wrapper mt-3'>
-                       <img src="/mocks/images/ads.svg"/>
+                       <img src="/mocks/images/ads.svg" alt=''/>
                        <div className='ads-item'>Ad</div>
                     </div>
                 </div>

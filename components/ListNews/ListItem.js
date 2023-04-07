@@ -12,6 +12,7 @@ export default function ListItem({ className, data, desc = true }) {
                             chapt: data.url
                         }
                     }}
+                    passHref
                 >
                     <div>
                         <img src={data.image} alt="" className="img-fluid" />
@@ -29,6 +30,7 @@ export default function ListItem({ className, data, desc = true }) {
                             chapt: data.url
                         }
                     }}
+                    passHref
                 >
                     <div className='title text-wrap'>{data.title}</div>
                 </Link>

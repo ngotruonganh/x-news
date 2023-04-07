@@ -3,7 +3,7 @@ import Head from 'next/head'
 import Header from '../components/Header'
 import Slidebar from '../components/Slidebar'
 import Footer from '../components/Footer'
-export default function index({ children }) {
+export default function Layout({ children }) {
     return (
         <>
             <Head>

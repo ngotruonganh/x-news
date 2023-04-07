@@ -4,12 +4,12 @@ import React, { useEffect } from 'react'
 import { getTagColor } from '../../utils/func'
 import classNames from 'classnames'
 
-export default function MasonryBox({ className, data, desc = false,meta=false ,isVideo="false"}) {
+export default function MasonryBox({ className, data, desc = false, meta = false, isVideo = "false" }) {
     const router = useRouter()
 
     return (
         <div className={className}>
-            <span className={classNames("tag",getTagColor(data.type))} >{data.type}</span>
+            <span className={classNames("tag", getTagColor(data.type))} >{data.type}</span>
             {data.image && <img src={data.image} alt="" className="img-fluid" />}
             <div className="shadoweffect"
                 onClick={() => {
@@ -22,9 +22,7 @@ export default function MasonryBox({ className, data, desc = false,meta=false ,i
             >
                 <div className="shadow-desc" >
                     <div className="blog-meta">
-                        {meta &&
-                            <div>{data.date} - {data.author}</div>
-                        }
+
                         <Link
                             href={{
                                 pathname: `${data.type.toLowerCase()}/[blog]`,
@@ -32,13 +30,21 @@ export default function MasonryBox({ className, data, desc = false,meta=false ,i
                                     blog: data.url
                                 }
                             }}
+                            passHref
                         >
                             <div className="title">
+                                {meta &&
+                                    <div className='meta'><div className='auth'>{data.author}</div>&nbsp;-&nbsp;<div className=''>{data.date}</div> </div>
+                                }
                                 {data.title}
                             </div>
                         </Link>
+                        
                         {desc &&
-                            <div>{data.desc}</div>
+                            <div className='desc'>
+                                 <hr className='throw-line' />
+                                {data.desc}
+                            </div>
                         }
                     </div>
                 </div>

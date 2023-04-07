@@ -32,10 +32,10 @@ export default function SectionThird({ data }) {
                         <div className="title">Categoty</div>
                         <div>
                             <button className='btn m-1 btn-left' onClick={()=>changeSide(-1)}>
-                                <img src="/assets/icons/icon-left.svg"/>
+                                <img src="/assets/icons/icon-left.svg" alt=''/>
                             </button>
                             <button className='btn m-1 btn-right' onClick={()=>changeSide(1)}>
-                                <img src="/assets/icons/icon-right.svg"/>
+                                <img src="/assets/icons/icon-right.svg" alt=''/>
                             </button>
                         </div>
                     </div>

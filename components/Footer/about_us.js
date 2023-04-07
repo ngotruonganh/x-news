@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function AboutUs() {
   return (
     <>
@@ -7,42 +9,46 @@ export default function AboutUs() {
         pellentesque dictum posuere id diam rutrum.
       </p>
       <div className="social d-flex justify-content-center justify-content-lg-around">
-        <a
+        <Link
           href="#"
           data-toggle="tooltip"
           data-placement="bottom"
           title="Facebook"
           className="bg-primary d-flex justify-content-center align-items-center rounded-circle"
+          passHref
         >
-          <img src="/assets/images/facebook.svg" />
-        </a>
-        <a
+          <img src="/assets/images/facebook.svg" alt=""/>
+        </Link>
+        <Link
           href="#"
           data-toggle="tooltip"
           data-placement="bottom"
           title="Twitter"
           className="bg-info d-flex justify-content-center align-items-center rounded-circle"
+          passHref
         >
-          <img src="/assets/images/twitter.svg" />
-        </a>
-        <a
+          <img src="/assets/images/twitter.svg" alt=""/>
+        </Link>
+        <Link
           href="#"
           data-toggle="tooltip"
           data-placement="bottom"
           title="Instagram"
           className="bg-instagram d-flex justify-content-center align-items-center rounded-circle"
+          passHref
         >
-          <img src="/assets/images/instagram.svg" />
-        </a>
-        <a
+          <img src="/assets/images/instagram.svg" alt=""/>
+        </Link>
+        <Link
           href="#"
           data-toggle="tooltip"
           data-placement="bottom"
           title="Youtube"
           className="bg-danger d-flex justify-content-center align-items-center rounded-circle"
+          passHref
         >
-          <img src="/assets/images/youtube.svg" />
-        </a>
+          <img src="/assets/images/youtube.svg" alt=""/>
+        </Link>
       </div>
     </>
   );

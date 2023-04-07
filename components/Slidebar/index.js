@@ -6,7 +6,7 @@ export default function Slidebar() {
     const [onPlay, setOnPlay] = useState(false)
     const [onPlayHover, setOnPlayHover] = useState(false)
     const [numView, setNumView] = useState(0)
-    let eventSlideView = null
+    let eventSlideView = useRef(null)
 
     const coutView = useRef(5)
 
@@ -24,7 +24,7 @@ export default function Slidebar() {
 
     useEffect(() => {
         if (onPlay && onPlayHover == false) {
-            eventSlideView = setInterval(() => {
+            eventSlideView.current = setInterval(() => {
                 setNumView(numView - 1)
                 coutView.current= Math.ceil(Math.abs(numView) / 100)
             }, 30)
@@ -74,6 +74,7 @@ export default function Slidebar() {
                     href={{
                         pathname: '/prices'
                     }}
+                    passHref
                 >
                     <div className="slide-right-item crypto-price">Crypto Prices &#8594;</div>
                 </Link>

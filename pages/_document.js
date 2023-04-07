@@ -9,8 +9,8 @@ class MyDocument extends Document {
         return (
             <Html lang="vi">
                 <Head >
-                    <link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
-                    <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,400i,500,700" rel="stylesheet" />
+                    <link rel="apple-touch-icon" href="images/apple-touch-icon.png" ></link>
+                    <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,400i,500,700" rel="stylesheet"></link>
                     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,700,900" rel="stylesheet" />
                     <link href="/assets/css/bootstrap.css" rel="stylesheet" />
                     <link href="/assets/css/bootstrap.min.css" rel="stylesheet" />

@@ -6,6 +6,16 @@ import { getTagColor } from '../../utils/func'
 import BlogBox from '../../components/SectionBox/blog_box'
 import {BreadCrumb} from '../../components'
 import { useRouter } from 'next/router'
+import Link from 'next/link'
+import { getHome } from '../api/home'
+
+export async function getServerSideProps(context) {
+    // Fetch data from external API
+    let menuCate = await getHome()
+  
+    // Pass data to the page via props
+    return { props: { menuCate: menuCate } }
+}
 export default function Chapts() {
     const data = dataSection4.data
 
@@ -18,7 +28,7 @@ export default function Chapts() {
                     <div className='row'>
                         <div className="col-lg-9 col-md-9 col-sm-12 col-xs-12 content-wrapper">
                             <div className='banner-image mb-3'>
-                                <img src="/mocks/images/bannerPosts.svg"/>
+                                <img src="/mocks/images/bannerPosts.svg" alt=''/>
                             </div>
                             <BreadCrumb subTitle="Category/ Singel Post"/>
                             <div className='title'>After all is said and done, more is done</div>
@@ -26,7 +36,7 @@ export default function Chapts() {
                                 <div className="meta" onClick={()=>{
                                     router.push("/contact-us")
                                 }}>
-                                    <div className='avatar'><img src="/mocks/icons/user1.svg" /></div>
+                                    <div className='avatar'><img src="/mocks/icons/user1.svg" alt=''/></div>
                                     <div>
                                         <div className='author'>FindTechX</div>
                                         <div className='date'> 27 Mar 2023</div>
@@ -36,7 +46,7 @@ export default function Chapts() {
                                     Share: {dataSocial.data.map((item, idx) => {
                                         return <div className='social-item' key={idx}>
                                             <div className={classNames(item.name, "dummy d-flex")} >
-                                                <img src={item.icon} />
+                                                <img src={item.icon} alt=''/>
                                                 <div>
                                                     <div>
                                                     </div>
@@ -127,7 +137,7 @@ export default function Chapts() {
                                     <li>
                                         <strong>Loyal moderation</strong>. There are no expected problems with
                                         moderation on Telegram, which is so familiar to Facebook, Google, and
-                                        Twitter users. You won't have to wait for a standard response from the
+                                        Twitter users. You wont have to wait for a standard response from the
                                         support team that your card has been blocked for some unknown reason.
                                     </li>
                                     <li>
@@ -162,8 +172,9 @@ export default function Chapts() {
                                 <p>
                                     Our advertising platform Telega.io offers more than 200 groups with crypto
                                     topics. You can find the channels{" "}
-                                    <a href="../catalog/cryptocurrencies?filter%5Bchat%5D=false">here</a>. Also,
-                                    you can search by chats using our filters.
+                                    <Link  href="../catalog/cryptocurrencies?filter%5Bchat%5D=false" passHref>
+                                        here
+                                    </Link>. Also, you can search by chats using our filters.
                                 </p>
                                 <p>
                                     <img
@@ -242,7 +253,7 @@ export default function Chapts() {
                             <hr className='throw-line' />
                             <div className='author-wrapper mb-3'>
                                 <div className="meta">
-                                    <div className='avatar'><img src="/mocks/icons/user1.svg" /></div>
+                                    <div className='avatar'><img src="/mocks/icons/user1.svg" alt=''/></div>
                                     <div>
                                         <div className='author'>FindTechX</div>
                                         <div className='date'> 27 Mar 2023</div>
@@ -252,7 +263,7 @@ export default function Chapts() {
                                     Share: {dataSocial.data.map((item, idx) => {
                                         return <div className='social-item' key={idx}>
                                             <div className={classNames(item.name, "dummy d-flex")} >
-                                                <img src={item.icon} />
+                                                <img src={item.icon} alt=''/>
                                                 <div>
                                                     <div>
                                                     </div>
@@ -312,7 +323,7 @@ export default function Chapts() {
                                 {dataSocial.data.map((item, idx) => {
                                     return <div className='social-item' key={idx}>
                                         <div className={classNames(item.name, "dummy d-flex")} >
-                                            <img src={item.icon} />
+                                            <img src={item.icon} alt=''/>
                                             <div>
                                                 <div>
                                                     {item.follwers}
@@ -326,7 +337,7 @@ export default function Chapts() {
                                 })}
                             </div>
                             <div className='ads-right-wrapper mt-3'>
-                                <img src="/mocks/images/ads.svg" />
+                                <img src="/mocks/images/ads.svg" alt=''/>
                                 <div className='ads-item'>Ad</div>
                             </div>
                             <div className='subscribe-wrapper mt-3'>

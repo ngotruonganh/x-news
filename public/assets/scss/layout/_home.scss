@@ -1,5 +1,6 @@
 .section-wrapper {
     padding-top: 20px;
+    color: black;
 }
 
 .section-first-wrapper {
@@ -38,15 +39,28 @@
             height: 180px;
         }
     }
+    .masonry-full{
+        .main {
+            .blog-meta {
+                .title {
+                    font-size: 36px;
+                    color: white;
+                    width: 80%;
+                }
 
-    .blog-meta {
-        .title {
-            font-size: 20px;
-            color: white;
+                .throw-line{
+                    width: 80%;
+                    border:none;
+                }
+
+                .desc{
+                    color: white;
+                    width: 50%;
+                }
+            }
         }
     }
-
-  
+   
 }
 
 

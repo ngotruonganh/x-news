@@ -12,6 +12,7 @@ export default function BlogBox({ className, data, desc = false, showName = fals
                             chapt: data.url
                         }
                     }}
+                    passHref
                 >
                     <span>
                         <img src={data.image} alt="" className="img-fluid" />
@@ -30,6 +31,7 @@ export default function BlogBox({ className, data, desc = false, showName = fals
                             chapt: data.url
                         }
                     }}
+                    passHref
                 >
                     <div>
                         <div className='meta'><div className='auth'>{data.author}</div> - <div className='date'>{data.date}</div> </div>
@@ -37,7 +39,7 @@ export default function BlogBox({ className, data, desc = false, showName = fals
                     </div>
                 </Link>
                 {desc && <p className='desc text-wrap'>{data.desc}</p>}
-                {showName && <small><a href={data.url} >{data.type}</a></small>}
+                {showName && <small><Link href={data.url} >{data.type}</Link></small>}
             </div>
         </div>
             :

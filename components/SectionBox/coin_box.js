@@ -11,11 +11,12 @@ export default function CoinBox({ coin }) {
                     pathname: `prices/[coin]`,
                     query: { coin: coin.name.toLowerCase() }
                 }}
+                passHref
             >
                 <div className={classNames("crypto-item-tag", diff < 0 && 'crypto-item-tag-down')}>
                     <div className="crypto-item-tag-title">
                         <div className="tag-left">
-                            <img className="coin-logo" width="39px" height="39px" src={coin.logo} />
+                            <img className="coin-logo" width="39px" height="39px" alt="" src={coin.logo} />
                             <div>{coin.name}</div>
                         </div>
                         <div className='tag-right'>
@@ -28,7 +29,7 @@ export default function CoinBox({ coin }) {
                         </div>
                     </div>
                     <div className="crypto-item-tag-diagram">
-                        <img src="/assets/images/demo-diagram.png" />
+                        <img src="/assets/images/demo-diagram.png" alt=""/>
                     </div>
                 </div>
 
