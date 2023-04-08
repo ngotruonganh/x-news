@@ -1,3 +1,4 @@
+import { HeadSection } from '../../components';
 import Layout from '../../layout'
 import { getHome } from "../api/home";
 
@@ -11,7 +12,9 @@ export async function getInitialProps(context) {
 export default function Category() {
   return (
     <Layout>
-        hello
+      <div>
+        <HeadSection />
+      </div>
     </Layout>
   )
 }

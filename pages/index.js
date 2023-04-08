@@ -1,45 +1,63 @@
 import Loading from '../components/Loading'
 import Layout from '../layout'
 import { SectionFirst, SectionFive, SectionFour, SectionSecond, SectionSix, SectionThird } from '../components'
-import dataSection1 from '../mocks/resData/dataSection1.json'
-import dataSection2 from '../mocks/resData/dataSection2.json'
-import dataSection3 from '../mocks/resData/dataSection3.json'
-import dataSection4 from '../mocks/resData/dataSection4.json'
-import dataSection5 from '../mocks/resData/dataSection5.json'
-import dataSection6 from '../mocks/resData/dataSection6.json'
-import { getHome } from "./api/home";
+import { getHome } from './api/posts'
 
-export async function getInitialProps(context) {
-  // Fetch data from external API
-  let menuCate = await getHome()
-
-  // Pass data to the page via props
-  return { props: { menuCate: menuCate } }
+export async function getStaticProps(context) {
+	// Fetch data from external API
+	let postsHome = await getHome()
+	if (!postsHome) {
+		return {
+			notFound: true,
+		}
+	}
+	// Pass data to the page via props
+	return { props: { postsHome }, revalidate: 1, }
 }
-export default function Home({menuCate}) {
-	console.log(menuCate);
+
+export default function Home({ postsHome }) {
+	const {
+		dataSection1,
+		dataSection2,
+		dataSection3,
+		dataSection4,
+		dataSection5,
+		dataSection6,
+	} = postsHome;
 	return (
 		<Layout>
 			{/* <Loading /> */}
-			<div  className='layout-wrapper'>
-				<div className='section-wrapper section-first-wrapper'>
-					<SectionFirst data={dataSection1.data} />
-				</div>
-				<div className='section-wrapper section-second-wrapper'>
-					<SectionSecond data={dataSection2.data} />
-				</div>
-				<div className='section-wrapper section-third-wrapper'>
-					<SectionThird data={dataSection3.data} />
-				</div>
-				<div className='section-wrapper section-four-wrapper'>
-					<SectionFour data={dataSection4.data} />
-				</div>
-				<div className='section-wrapper section-five-wrapper'>
-					<SectionFive data={dataSection5.data} />
-				</div>
-				<div className='section-wrapper section-six-wrapper'>
-					<SectionSix data={dataSection6.data} />
-				</div>
+			<div className='layout-wrapper'>
+				{dataSection1.length > 0 &&
+					<div className='section-wrapper section-first-wrapper'>
+						<SectionFirst data={dataSection1} />
+					</div>
+				}
+				{dataSection2.length &&
+					<div className='section-wrapper section-second-wrapper'>
+						<SectionSecond data={dataSection2} />
+					</div>
+				}
+				{dataSection3.length > 0 &&
+					<div className='section-wrapper section-third-wrapper'>
+						<SectionThird data={dataSection3} />
+					</div>
+				}
+				{dataSection4.length &&
+					<div className='section-wrapper section-four-wrapper'>
+						<SectionFour data={dataSection4} />
+					</div>
+				}
+				{dataSection5.length &&
+					<div className='section-wrapper section-five-wrapper'>
+						<SectionFive data={dataSection5} />
+					</div>
+				}
+				{dataSection6.length &&
+					<div className='section-wrapper section-six-wrapper'>
+						<SectionSix data={dataSection6} />
+					</div>
+				}
 				<hr className="invis" />
 			</div>
 		</Layout >
