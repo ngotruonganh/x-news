@@ -1,35 +1,34 @@
-import Link from 'next/link'
 import { useRouter } from 'next/router'
 import React, { useEffect } from 'react'
 import { getTagColor } from '../../utils/func'
 import classNames from 'classnames'
 
-export default function MasonryBox({ className, data, desc = false, meta = false, isVideo = "false" }) {
+export default function MasonryBox({ className, data, desc = false, meta = false, isVideo = false }) {
     const router = useRouter()
+
+    function onClickPosts() {
+        const typePost = isVideo ? 'videos' : 'posts'
+        router.push({
+            pathname: `${typePost}/[chapt]`,
+            query: { chapt: data.seo }
+
+        })
+    }
 
     return (
         <div className={className}>
             <span className={classNames("tag", getTagColor(data.type))} >{data.type}</span>
-            {data.image && <img src={data.image} alt="" className="img-fluid" />}
+            {isVideo === true ?
+                <iframe src={data.url.replace('watch?v=', 'embed/')}></iframe>
+                :
+                data.image && <img src={data.image} alt="" className="img-fluid" />}
             <div className="shadoweffect"
-                onClick={() => {
-                    router.push({
-                        pathname: `posts/[chapt]`,
-                        query: { chapt: data.url }
-
-                    })
-                }}
+                onClick={onClickPosts}
             >
                 <div className="shadow-desc" >
                     <div className="blog-meta">
-                        <Link
-                            href={{
-                                pathname: `/posts/[chapt]`,
-                                query: {
-                                    chapt: data.url
-                                }
-                            }}
-                            passHref
+                        <div
+                            onClick={onClickPosts}
                         >
                             <div className="title text-wrap">
                                 {meta &&
@@ -37,10 +36,10 @@ export default function MasonryBox({ className, data, desc = false, meta = false
                                 }
                                 {data.title}
                             </div>
-                        </Link>
+                        </div>
                         {desc &&
                             <div className='desc'>
-                                 <hr className='throw-line' />
+                                <hr className='throw-line' />
                                 {data.desc}
                             </div>
                         }

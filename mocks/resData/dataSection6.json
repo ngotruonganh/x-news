@@ -7,9 +7,10 @@
             "image": "/mocks/images/video.svg",
             "date": "27 Dec 2020",
             "author": "by Craig Bator",
-            "url": "hello",
+            "url": "https://www.youtube.com/watch?v=_VXGnWGFK1M",
             "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus lobortis augue condimentum maecenas. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus lobortis augue condimentum maecenas.",
-            "tagSeo":"bank"
+            "tagSeo": "bank",
+            "seo": "one-picee"
         },
         {
             "type": "Blockchain",
@@ -18,9 +19,10 @@
             "image": "/mocks/images/banner29.svg",
             "date": "27 Mar 2023",
             "author": "by FintechX",
-            "url": "/The-golden-rules-you-need ",
+            "url": "https://www.youtube.com/watch?v=p84MfhO8w00",
             "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus lobortis augue condimentum maecenas. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus lobortis augue condimentum maecenas.",
-            "tagSeo":"blockchain"
+            "tagSeo": "blockchain",
+            "seo": "video-2"
         },
         {
             "type": "NFT",
@@ -29,9 +31,10 @@
             "image": "/mocks/images/banner30.svg",
             "date": "27 Mar 2023",
             "author": "by FintechX",
-            "url": "/The-golden-rules-you-need ",
+            "url": "https://www.youtube.com/watch?v=KavXSXuR-tM",
             "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus lobortis augue condimentum maecenas. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus lobortis augue condimentum maecenas.",
-            "tagSeo":"nft"
+            "tagSeo": "nft",
+            "seo": "video-3"
         },
         {
             "type": "Crypto",
@@ -40,9 +43,10 @@
             "image": "/mocks/images/banner31.svg",
             "date": "27 Mar 2023",
             "author": "by FintechX",
-            "url": "/The-golden-rules-you-need ",
+            "url": "https://www.youtube.com/watch?v=2kpbrrR63Yk",
             "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus lobortis augue condimentum maecenas. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus lobortis augue condimentum maecenas.",
-            "tagSeo":"crypto"
+            "tagSeo": "crypto",
+            "seo": "video-4"
         }
     ]
 }
