@@ -8,9 +8,9 @@ export default function BlogBoxSquare({ className, data, desc = true }) {
                 <div className="post-media">
                     <Link
                         href={{
-                            pathname: `${data.type.toLowerCase()}/[blog]`,
+                            pathname: `posts/[chapt]`,
                             query: {
-                                blog: data.url
+                                chapt: data.url
                             }
                         }}
                         passHref
@@ -26,11 +26,12 @@ export default function BlogBoxSquare({ className, data, desc = true }) {
             <div className={classNames("blog-meta big-meta col-md-8 col-sm-6", className)}>
                 <Link
                     href={{
-                        pathname: `${data.type.toLowerCase()}/[blog]`,
+                        pathname: `posts/[chapt]`,
                         query: {
-                            blog: data.url
+                            chapt: data.url
                         }
-                    }} passHref
+                    }}
+                    passHref
                 >
                     <Link href="/" passHref>
                         <h4>{data.title}</h4>

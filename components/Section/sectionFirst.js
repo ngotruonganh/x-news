@@ -1,7 +1,6 @@
 import React from 'react'
 import MasonryBox from '../SectionBox/masonry_box'
 export default function SectionFirst({ data }) {
-
     return (
         <div className="container-fluid">
             <div className="masonry-blog row">

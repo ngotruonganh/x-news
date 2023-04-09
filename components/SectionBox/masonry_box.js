@@ -14,20 +14,19 @@ export default function MasonryBox({ className, data, desc = false, meta = false
             <div className="shadoweffect"
                 onClick={() => {
                     router.push({
-                        pathname: `posts/[chapts]`,
-                        query: { chapts: data.url }
+                        pathname: `posts/[chapt]`,
+                        query: { chapt: data.url }
 
                     })
                 }}
             >
                 <div className="shadow-desc" >
                     <div className="blog-meta">
-
                         <Link
                             href={{
-                                pathname: `${data.type.toLowerCase()}/[blog]`,
+                                pathname: `/posts/[chapt]`,
                                 query: {
-                                    blog: data.url
+                                    chapt: data.url
                                 }
                             }}
                             passHref
@@ -39,7 +38,6 @@ export default function MasonryBox({ className, data, desc = false, meta = false
                                 {data.title}
                             </div>
                         </Link>
-                        
                         {desc &&
                             <div className='desc'>
                                  <hr className='throw-line' />
