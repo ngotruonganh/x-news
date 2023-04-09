@@ -1,19 +1,92 @@
-import React from "react";
-import Layout from "../../layout";
-import { getHome } from "../api/home";
+import Link from "next/link";
 
-export async function getInitialProps(context) {
-  // Fetch data from external API
-  let menuCate = await getHome()
-
-  // Pass data to the page via props
-  return { props: { menuCate: menuCate } }
-}
-
-export default function Author({menuCate}) {
+function Author() {
   return (
-    <Layout>
-      hello
-    </Layout>
+    <div className="w-50 d-flex flex-column align-items-center m-auto my-3">
+      <img className="w-25" src="/assets/images/FintechX.png" alt=""/>
+      <h1 className="my-3">FintechX</h1>
+      <p className="text-center">
+        I am a Fellow at the adam smith institute in London, a writer here and
+        there on this and that and strangely. one the global experts on the
+        metal scandium, one of the rare erths. An odd thing to be but someone
+        does have to be such and in this flavour of our universe I am. I have
+        written fro the times , Daily Telegraph, Express, Independent I have also
+        ghosted pieces for several UK politicians in many of the UK papers,
+        including the Dily Sport.
+      </p>
+      <div className="social my-4">
+        <a
+          href="/"
+          data-toggle="tooltip"
+          data-placement="bottom"
+          title="Facebook"
+          className="facebook d-flex justify-content-center align-items-center rounded-circle"
+        >
+          <img src="/assets/images/facebook.svg" alt="" />
+        </a>
+        <a
+          href="/"
+          data-toggle="tooltip"
+          data-placement="bottom"
+          title="Instagram"
+          className="instagram d-flex justify-content-center align-items-center rounded-circle"
+          passHref
+        >
+          <img src="/assets/images/instagram.svg" alt=""/>
+        </a>
+        <a
+          href="/"
+          data-toggle="tooltip"
+          data-placement="bottom"
+          title="Youtube"
+          className="youtube d-flex justify-content-center align-items-center rounded-circle"
+          passHref
+        >
+          <img src="/assets/images/youtube.svg" alt=""/>
+        </a>
+        <a
+          href="/"
+          data-toggle="tooltip"
+          data-placement="bottom"
+          title="Twitter"
+          className="twitter d-flex justify-content-center align-items-center rounded-circle"
+          passHref
+        >
+          <img src="/assets/images/twitter.svg" alt=""/>
+        </a>
+        <a
+          href="/"
+          data-toggle="tooltip"
+          data-placement="bottom"
+          title="Behance"
+          className="behance d-flex justify-content-center align-items-center rounded-circle"
+          passHref
+        >
+          <img src="/assets/images/behance.svg" alt=""/>
+        </a>
+        <a
+          href="#"
+          data-toggle="tooltip"
+          data-placement="bottom"
+          title="Dibble"
+          className="dribble d-flex justify-content-center align-items-center rounded-circle"
+          passHref
+        >
+          <img src="/assets/images/dribble.svg" alt=""/>
+        </a>
+        <a
+          href="#"
+          data-toggle="tooltip"
+          data-placement="bottom"
+          title="Email"
+          className="email d-flex justify-content-center align-items-center rounded-circle"
+          passHref
+        >
+          <img src="/assets/images/email.svg" alt=""/>
+        </a>
+      </div>
+    </div>
   );
 }
+
+export default Author;
