@@ -5,6 +5,7 @@ import classNames from 'classnames'
 import dataCategory from '../../mocks/resData/dataCategory.json'
 import ListNews from '../ListNews'
 import SideTag from '../SideTag'
+import AdsBanner from '../AdsBanner'
 export default function SectionFive({ data }) {
 
     return (
@@ -46,18 +47,7 @@ export default function SectionFive({ data }) {
                     <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                         <ListNews className="flex-row" data={data} size={4} />
                     </div>
-                    <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 ads-wrapper-full" style={{ backgroundImage: `url(/mocks/images/ads2.svg)` }}>
-                        <div className='title'>
-                            <div>NFTBOOKS</div>
-                            <div> Best Platform for NFT Book</div>
-                            <div className='hight-light'>Experience the change!</div>
-                        </div>
-                        <div>
-                            <button>
-                                READ MORE
-                            </button>
-                        </div>
-                    </div>
+                    <AdsBanner />
                 </div>
                 <div className="col-lg-3 col-md-3 col-sm-12 col-xs-12 ">
                     <div className='subscribe-wrapper'>
@@ -77,7 +67,7 @@ export default function SectionFive({ data }) {
                         {dataCategory.data.map((item, idx) => {
                             return <div className="rank-item" key={idx}>
                                 <span className='title'>
-                                    <img src="/assets/icons/icon-right.svg" alt=''/>
+                                    <img src="/assets/icons/icon-right.svg" alt='' />
                                     {item.name}
                                 </span>
                                 <span className={classNames("total", getTagColor(item.tagSeo))} >{item.total}</span>

@@ -1,7 +1,7 @@
 import { useRouter } from 'next/router'
 import React from 'react'
 import Link from 'next/link';
-export default function BlogBox({ className, data, desc = false, showName = false, isVideo = false }) {
+export default function BlogBox({ className, data, desc = false, showName = false, isVideo = false, meta = true }) {
     const router = useRouter()
 
     function onClickPosts() {
@@ -21,7 +21,7 @@ export default function BlogBox({ className, data, desc = false, showName = fals
                 >
                     <div>
                         {isVideo === true ?
-                            <iframe src={data.url.replace('watch?v=', 'embed/')}></iframe>
+                            <iframe src={data.url && data.url.replace('watch?v=', 'embed/')}></iframe>
                             :
                             data.image && <img src={data.image} alt="" className="img-fluid" />}
                         <div className="hovereffect">
@@ -35,7 +35,9 @@ export default function BlogBox({ className, data, desc = false, showName = fals
                     onClick={onClickPosts}
                 >
                     <div>
-                        <div className='meta'><div className='auth'>{data.author}</div> - <div className='date'>{data.date}</div> </div>
+                        {meta &&
+                            <div className='meta'><div className='auth'>{data.author}</div> - <div className='date'>{data.date}</div> </div>
+                        }
                         <h4 className='title'>{data.title}</h4>
                     </div>
                 </div>
