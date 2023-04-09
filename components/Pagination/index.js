@@ -10,24 +10,24 @@ function Pagination({ postPerPage, totalPost }) {
     <nav>
       <ul className="pagination">
         <li className="page-item">
-          <Link className="page-back" href="/" aria-label="Previous" passHref>
+          <span className="page-back" href="/" aria-label="Previous" passHref>
             <img src="/assets/images/back.svg" alt="back" />
             <span className="sr-only">Previous</span>
-          </Link>
+          </span>
         </li>
         {pageNumber.map((Number,idx) => (
           <li className="page-item" key={idx}>
-            <Link className="page-link" href="/" passHref>
+            <span className="page-link"  passHref>
               {Number}
-            </Link>
+            </span>
           </li>
         ))}
         <li className="page-item">
-          <Link className="page-next" href="/" aria-label="Next" passHref>
+          <span className="page-next" href="/" aria-label="Next" passHref>
             <img src="/assets/images/next.svg" alt="next" />
 
             <span className="sr-only">Next</span>
-          </Link>
+          </span>
         </li>
       </ul>
     </nav>

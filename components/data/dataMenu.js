@@ -12,7 +12,7 @@ export const menuList = [
     {
         name: 'CATEGORY',
         title: '',
-        url: '/category2'
+        url: '/videos'
     },
     {
         name: 'CATEGORY',
