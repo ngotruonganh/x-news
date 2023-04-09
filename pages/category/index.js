@@ -33,7 +33,7 @@ export default function Category({ catePost }) {
 				</div>
 				<div className='row'>
 					<div className="col-lg-9 col-md-9 col-sm-12 col-xs-12">
-						{dataSection.length && <ListSection data={dataSection} />}
+						{dataSection.length && <ListSection data={dataSection} desc={true} isVideo={false} />}
 					</div>
 					<div className="col-lg-3 col-md-3 col-sm-12 col-xs-12 ">
 						<div className='subscribe-wrapper'>
