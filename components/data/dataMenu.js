@@ -25,9 +25,9 @@ export const menuList = [
         url: '/about-us'
     },
     {
-        name: 'CATEGORY',
+        name: 'CONTACT US',
         title: '',
-        url: '/category5'
+        url: '/contact-us'
     },
     {
         name: 'CATEGORY',

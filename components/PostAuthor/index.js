@@ -9,7 +9,7 @@ export default function PostAuthor() {
     return (
         <div className='author-wrapper'>
             <div className="meta" onClick={() => {
-                router.push("/contact-us")
+                router.push("/author")
             }}>
                 <div className='avatar'><img src="/mocks/icons/user1.svg" alt='' /></div>
                 <div>
