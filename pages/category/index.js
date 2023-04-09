@@ -23,7 +23,7 @@ export default function Category({ catePost }) {
 	return (
 		<Layout>
 			<div className='category-wrapper layout-wrapper'>
-				<div className='head-section'>
+				<div className='head-section-wrapper'>
 					{dataSection1.length && <HeadSection data={dataSection1} />}
 				</div>
 				<div className='mt-3'>

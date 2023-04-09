@@ -20,9 +20,9 @@ export const menuList = [
         url: '/archives'
     },
     {
-        name: 'CATEGORY',
+        name: 'ABOUT US',
         title: '',
-        url: '/category4'
+        url: '/about-us'
     },
     {
         name: 'CATEGORY',
