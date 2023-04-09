@@ -47,6 +47,28 @@
     }
 }
 
+.masonry-full{
+    .main {
+        .blog-meta {
+            .title {
+                font-size: 36px;
+                color: white;
+                width: 80%;
+            }
+
+            .throw-line{
+                width: 80%;
+                border:none;
+            }
+
+            .desc{
+                color: white;
+                width: 50%;
+            }
+        }
+    }
+}
+
 
 .blog-meta {
     .meta {
@@ -70,8 +92,8 @@
 
     .tag {
         position: absolute;
-        top: 5%;
-        left: 5%;
+        top: 10px;
+        left: 10px;
         z-index: 100;
         color: white;
         padding: 5px;

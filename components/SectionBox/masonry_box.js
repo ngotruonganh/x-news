@@ -31,7 +31,7 @@ export default function MasonryBox({ className, data, desc = false, meta = false
                             }}
                             passHref
                         >
-                            <div className="title">
+                            <div className="title text-wrap">
                                 {meta &&
                                     <div className='meta'><div className='auth'>{data.author}</div>&nbsp;-&nbsp;<div className=''>{data.date}</div> </div>
                                 }
