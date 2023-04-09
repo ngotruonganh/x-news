@@ -9,7 +9,7 @@ export default function MasonryBox({ className, data, desc = false, meta = false
     function onClickPosts() {
         const typePost = isVideo ? 'videos' : 'posts'
         router.push({
-            pathname: `${typePost}/[chapt]`,
+            pathname: `/${typePost}/[chapt]`,
             query: { chapt: 'dummy' }
 
         })

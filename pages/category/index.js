@@ -5,7 +5,7 @@ import { getHome } from '../api/posts'
 import { getTagColor } from '../../utils/func';
 import dataCategory from '../../mocks/resData/dataCategory.json'
 
-export async function getServerSideProps(context) {
+export async function getStaticProps(context) {
 	// Fetch data from external API
 	let catePost = await getHome()
 	if (!catePost) {

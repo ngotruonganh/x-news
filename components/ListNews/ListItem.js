@@ -9,7 +9,7 @@ export default function ListItem({ className, data, desc = true }) {
                     href={{
                         pathname: `/posts/[chapt]`,
                         query: {
-                            chapt: data.seo
+                            chapt: "dummy"
                         }
                     }}
                     passHref
@@ -27,7 +27,7 @@ export default function ListItem({ className, data, desc = true }) {
                     href={{
                         pathname: `/posts/[chapt]`,
                         query: {
-                            chapt: data.seo
+                            chapt: "dummy"
                         }
                     }}
                     passHref

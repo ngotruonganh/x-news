@@ -7,7 +7,7 @@ export default function BlogBox({ className, data, desc = false, showName = fals
     function onClickPosts() {
         const typePost = isVideo ? 'videos' : 'posts'
         router.push({
-            pathname: `${typePost}/[chapt]`,
+            pathname: `/${typePost}/[chapt]`,
             query: { chapt: "dummy" }
 
         })
