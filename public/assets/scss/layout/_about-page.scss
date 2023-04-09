@@ -1,0 +1,77 @@
+.about-wrapper {
+    .header-about {
+        margin: 40px 0 20px;
+
+        .link {
+            font-weight: 800;
+            font-size: 14px;
+            color: rgba(57, 57, 57, 0.6);
+
+            img {
+                margin-right: 10px;
+            }
+        }
+
+        .name {
+            font-weight: 800;
+            font-size: 36px;
+            margin: 10px 0;
+            color: #393939;
+        }
+
+        .desc {
+            font-weight: 400;
+            font-size: 14px;
+            color: rgba(57, 57, 57, 0.6);
+            white-space: nowrap;
+        }
+    }
+
+    .banner {
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    .slogan {
+        width: 80%;
+        margin: 40px auto;
+        font-weight: 800;
+        font-size: 36px;
+        line-height: 41px;
+        text-align: center;
+        color: #393939;
+    }
+
+    .founder {
+        display: flex;
+        justify-content: center;
+    }
+
+    .phrases {
+        display: flex;
+        margin: 20px -40px;
+
+        .item {
+            margin: 40px;
+
+            .title {
+                font-weight: 800;
+                font-size: 36px;
+                line-height: 41px;
+                text-transform: capitalize;
+                color: #FABF2C;
+                width: fit-content;
+            }
+
+            .para {
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 20px;
+                color: rgba(57, 57, 57, 0.6);
+                margin: 20px 0;
+            }
+        }
+    }
+}
