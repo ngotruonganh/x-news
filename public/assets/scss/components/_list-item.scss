@@ -9,6 +9,7 @@
     margin: 10px 5px;
     gap: 10px;
     height: 90px;
+
     .post-media {
         height: 100%;
     }
@@ -26,6 +27,7 @@
         display: -webkit-box;
         -webkit-line-clamp: 3;
         -webkit-box-orient: vertical;
+
         .title {
             font-weight: 500;
         }
@@ -41,7 +43,8 @@
         .post-media {
             flex-basis: 40%;
             padding-bottom: 0%;
-            img{
+
+            img {
                 width: 100%;
             }
         }
