@@ -8,7 +8,7 @@ export default function BlogBox({ className, data, desc = false, showName = fals
         const typePost = isVideo ? 'videos' : 'posts'
         router.push({
             pathname: `${typePost}/[chapt]`,
-            query: { chapt: data.seo }
+            query: { chapt: "dummy" }
 
         })
     }

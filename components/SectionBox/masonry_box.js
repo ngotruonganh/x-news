@@ -1,5 +1,5 @@
 import { useRouter } from 'next/router'
-import React, { useEffect } from 'react'
+import React from 'react'
 import { getTagColor } from '../../utils/func'
 import classNames from 'classnames'
 
@@ -10,7 +10,7 @@ export default function MasonryBox({ className, data, desc = false, meta = false
         const typePost = isVideo ? 'videos' : 'posts'
         router.push({
             pathname: `${typePost}/[chapt]`,
-            query: { chapt: data.seo }
+            query: { chapt: 'dummy' }
 
         })
     }

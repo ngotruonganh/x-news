@@ -1,5 +1,3 @@
-import Link from "next/link";
-
 function Author() {
   return (
     <div className="w-50 d-flex flex-column align-items-center m-auto my-3">

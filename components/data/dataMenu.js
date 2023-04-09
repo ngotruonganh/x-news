@@ -1,6 +1,6 @@
 export const menuList = [
     {
-        name: 'Home',
+        name: 'HOME',
         title: '',
         url: '/'
     },
@@ -10,14 +10,14 @@ export const menuList = [
         url: '/category'
     },
     {
-        name: 'CATEGORY',
+        name: 'VIDEOS',
         title: '',
         url: '/videos'
     },
     {
-        name: 'CATEGORY',
+        name: 'ARCHIVES',
         title: '',
-        url: '/category3'
+        url: '/archives'
     },
     {
         name: 'CATEGORY',

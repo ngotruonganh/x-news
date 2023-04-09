@@ -1,56 +1,56 @@
 .category-wrapper {
     padding-top: 20px;
 
-    .head-section {
-        color: white;
-        .title{
-            font-size: 20px;
-        }
-        .masonry-full {
-            img {
-                height: 350px;
-            }
-        }
-
-        .section-group{
-            display: flex;
-        }
-
-        .section-left {
-            flex-basis: 50%;
-            .title{
-                font-size: 18px;
-            }
-            .masonry-box {
-                flex-basis: 50%;
-
-                img {
-                    height: 400px;
-
-                }
-            }
-        }
-
-        .section-right {
-            display: flex;
-            flex-wrap: wrap;
-            flex-basis: 50%;
-            .title{
-                font-size: 14px;
-            }
-            .masonry-box {
-                width: 50%;
-                height: 200px;
-            }
-        }
-    }
-
     .list-section{
         display: flex;
         flex-wrap: wrap;
         .masonry-box{
             .blog-box{
             }
+        }
+    }
+}
+
+.head-section {
+    color: white;
+    .title{
+        font-size: 20px;
+    }
+    .masonry-full {
+        img {
+            height: 350px;
+        }
+    }
+
+    .section-group{
+        display: flex;
+    }
+
+    .section-left {
+        flex-basis: 50%;
+        .title{
+            font-size: 18px;
+        }
+        .masonry-box {
+            flex-basis: 50%;
+
+            img {
+                height: 400px;
+
+            }
+        }
+    }
+
+    .section-right {
+        display: flex;
+        flex-wrap: wrap;
+        flex-basis: 50%;
+        .title{
+            font-size: 14px;
+        }
+        .masonry-box {
+            width: 50%;
+            height: 200px;
         }
     }
 }
