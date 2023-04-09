@@ -39,28 +39,6 @@
             height: 180px;
         }
     }
-    .masonry-full{
-        .main {
-            .blog-meta {
-                .title {
-                    font-size: 36px;
-                    color: white;
-                    width: 80%;
-                }
-
-                .throw-line{
-                    width: 80%;
-                    border:none;
-                }
-
-                .desc{
-                    color: white;
-                    width: 50%;
-                }
-            }
-        }
-    }
-   
 }
 
 
@@ -85,8 +63,8 @@
             font-size: 36px;
             color: white;
         }
+        
     }
-
 }
 
 .section-five-wrapper {
@@ -106,23 +84,36 @@
             height: 180px;
         }
     }
+}
 
+.ads-wrapper-full {
+    display: flex;
+    margin-top: 30px;
+    position: relative;
+    color: white;
+    height: 120px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
-    .ads-wrapper {
+    .hight-light {
+        color: #FABF2C !important;
+    }
+    button {
+        margin-top: 10px;
+        background: #FABF2C;
         display: flex;
-        margin-top: 30px;
-        position: relative;
-        color: white;
-        height: 120px;
-        background-repeat: no-repeat;
-        background-size: cover;
-        display: flex;
-        justify-content: space-between;
+        flex-direction: row;
+        justify-content: center;
         align-items: center;
-
-        .hight-light {
-            color: #FABF2C !important;
-        }
+        padding: 8px 32px;
+        gap: 10px;
+        width: 220px;
+        height: 38px;
+        outline: none;
+        border: none;
     }
 }
 
@@ -185,9 +176,6 @@
         }
     }
 }
-
-
-
 
 .rank-wrapper {
     display: flex;
