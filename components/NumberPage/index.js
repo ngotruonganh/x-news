@@ -1,19 +1,32 @@
+import classNames from 'classnames';
+import { useRouter } from 'next/router'
 import React from 'react'
 
 export default function NumberPage() {
+    const router = useRouter()
+    const { query } = router
+    const data = [1, 2, 3, 4, 5, 6, 7];
+    console.log(query);
+    function handleChangePage(page){
+        router.push({pathname:router.pathname,query:{...query,page:page}})
+    }
+
     return (
         <div className='number-page-wrapper'>
             <div className='number action'>
                 <img src="/assets/icons/icon-left.svg" alt='' />
             </div>
-            <div className='number active'>1</div>
-            <div className='number'>2</div>
-            <div className='number'>3</div>
-            <div className='number'>4</div>
-            <div className='number'>5</div>
-            <div className='number action'>
-                <img src="/assets/icons/icon-right.svg" alt='' />
-            </div>
-        </div>
+            {data.map((item, idx) => {
+                return <div key={idx}
+                    className={classNames('number', { 'active': query.page == item })}
+                    onClick={()=>handleChangePage(item)}
+                >
+                    {item}
+                    </div>
+            })}
+                    <div className='number action'>
+                        <img src="/assets/icons/icon-right.svg" alt='' />
+                    </div>
+                </div>
     )
-}
+            }

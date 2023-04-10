@@ -1,0 +1,60 @@
+.archives-wrapper {
+    .nav-year-wrapper {
+        display: flex;
+        gap: 10px;
+        justify-content: flex-start;
+
+        .year-item {
+            width: 122px;
+            height: 49px;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 111.9%;
+            text-align: center;
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            padding: 11px 35px;
+            border: .1px solid black;
+        }
+
+        .active {
+            background: #FABF2C;
+            color: white;
+            border: none;
+        }
+    }
+
+    .nav-month-wrapper {
+        display: flex;
+        gap: 10px;
+        .month-item {
+            margin-top: 20px;
+            height: 27px;
+            font-style: normal;
+            font-size: 16px;
+            line-height: 111.9%;
+            text-align: center;
+            display: flex;
+            flex-direction: row;
+            padding: 11px 35px;
+            padding: 10px;
+            padding-bottom: 25px;
+        }
+
+        .active {
+            border-bottom: 1px solid #FABF2C;
+            color: #FABF2C;
+            font-weight: 600;
+        }
+    }
+
+    .list-archives .list-item-wrapper{
+        height: 200px;
+        img{
+            height: 200px;
+            width: 370px;
+        }
+    }
+}

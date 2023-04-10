@@ -34,9 +34,7 @@ export default function ListItem({ className, data, desc = true }) {
                 >
                     <div className='title text-wrap'>{data.title}</div>
                 </Link>
-
                 {desc && <p className='text-wrap'>{data.desc}</p>}
-
             </div>
         </div>
 

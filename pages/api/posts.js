@@ -7,7 +7,7 @@ import dataSection6 from '../../mocks/resData/dataSection6.json'
 import { sleep } from '../../utils/func'
 
 async function getHome() {
-    await sleep(10)
+    await sleep(1000)
     return {
         dataSection1: dataSection1.data,
         dataSection2: dataSection2.data,
