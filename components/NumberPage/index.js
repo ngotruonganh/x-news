@@ -9,8 +9,10 @@ export default function NumberPage({ toIndex = false }) {
     function handleChangePage(page) {
         router.push({ pathname: router.pathname, query: { ...query, page: page } }, undefined,
             { scroll: false })
+        if (toIndex) {
             const scrollIndex = document.getElementById("scroll-index");
             scrollIndex.scrollIntoView({ behavior: "smooth" });
+        }
     }
 
     return (
