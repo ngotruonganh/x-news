@@ -3,20 +3,17 @@ import Layout from "../../layout";
 import Author from "./author";
 import data from "../../mocks/resData/dataPostByAuthor.json";
 import Pagination from "../../components/Pagination";
-import dataSocial from '../../mocks/resData/dataSocial.json'
+import { BreadCrumb } from "../../components";
 export default function AuthorPage() {
   return (
     <Layout>
-      <div className="layout-wrapper">
-        <div className="d-flex align-items-center mt-2">
-          <img className="mr-3" src="/assets/images/author.svg" alt="home" />
-          <span className="font-weight-bold">Home / Author</span>
-        </div>
+      <div className="author-wrap mt-3">
+        <BreadCrumb subTitle="Author" />
         <Author />
         <div className="row mt-3">
           {data.map((item) => {
             return (
-              <div key={item.id} className="col-12 col-md-4">
+              <div key={item.id} className="col-12 col-md-6 col-lg-4">
                 <div className="position-relative">
                   <img className="w-100" src={item.image} alt="" />
                   <span className="position-absolute top-0 start-0">

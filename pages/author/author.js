@@ -1,18 +1,18 @@
-function Author() {
+export default function Author() {
   return (
-    <div className="w-50 d-flex flex-column align-items-center m-auto my-3">
-      <img className="w-25" src="/assets/images/FintechX.png" alt=""/>
+    <div className="about-author-wrap">
+      <img src="/assets/images/FintechX.png" alt="" />
       <h1 className="my-3">FintechX</h1>
       <p className="text-center">
         I am a Fellow at the adam smith institute in London, a writer here and
         there on this and that and strangely. one the global experts on the
         metal scandium, one of the rare erths. An odd thing to be but someone
         does have to be such and in this flavour of our universe I am. I have
-        written fro the times , Daily Telegraph, Express, Independent I have also
-        ghosted pieces for several UK politicians in many of the UK papers,
+        written fro the times , Daily Telegraph, Express, Independent I have
+        also ghosted pieces for several UK politicians in many of the UK papers,
         including the Dily Sport.
       </p>
-      <div className="social my-4">
+      <div className="social-link my-4">
         <a
           href="/"
           data-toggle="tooltip"
@@ -20,7 +20,7 @@ function Author() {
           title="Facebook"
           className="facebook d-flex justify-content-center align-items-center rounded-circle"
         >
-          <img src="/assets/images/facebook.svg" alt="" />
+          <img src="/assets/images/facebook.svg" alt="facebook" />
         </a>
         <a
           href="/"
@@ -30,7 +30,7 @@ function Author() {
           className="instagram d-flex justify-content-center align-items-center rounded-circle"
           passHref
         >
-          <img src="/assets/images/instagram.svg" alt=""/>
+          <img src="/assets/images/instagram.svg" alt="instagram" />
         </a>
         <a
           href="/"
@@ -40,7 +40,7 @@ function Author() {
           className="youtube d-flex justify-content-center align-items-center rounded-circle"
           passHref
         >
-          <img src="/assets/images/youtube.svg" alt=""/>
+          <img src="/assets/images/youtube.svg" alt="youtube" />
         </a>
         <a
           href="/"
@@ -50,7 +50,7 @@ function Author() {
           className="twitter d-flex justify-content-center align-items-center rounded-circle"
           passHref
         >
-          <img src="/assets/images/twitter.svg" alt=""/>
+          <img src="/assets/images/twitter.svg" alt="twitter" />
         </a>
         <a
           href="/"
@@ -60,7 +60,7 @@ function Author() {
           className="behance d-flex justify-content-center align-items-center rounded-circle"
           passHref
         >
-          <img src="/assets/images/behance.svg" alt=""/>
+          <img src="/assets/images/behance.svg" alt="behance" />
         </a>
         <a
           href="#"
@@ -70,7 +70,7 @@ function Author() {
           className="dribble d-flex justify-content-center align-items-center rounded-circle"
           passHref
         >
-          <img src="/assets/images/dribble.svg" alt=""/>
+          <img src="/assets/images/dribble.svg" alt="dibble" />
         </a>
         <a
           href="#"
@@ -80,11 +80,9 @@ function Author() {
           className="email d-flex justify-content-center align-items-center rounded-circle"
           passHref
         >
-          <img src="/assets/images/email.svg" alt=""/>
+          <img src="/assets/images/email.svg" alt="email" />
         </a>
       </div>
     </div>
   );
 }
-
-export default Author;
