@@ -55,7 +55,7 @@ export default function Archives() {
                     <HeadSection data={dataSection1.data} />
                 </div>
                 <div>
-                    <div className='mt-3'>
+                    <div id="scroll-index" className='mt-3'>
                         <BreadCrumb subTitle="Archives" />
                         <SideTag title="Archives" showTag={false} />
                         <p className='mt-3'>
@@ -88,7 +88,7 @@ export default function Archives() {
                     <div className='row mt-3'>
                         <div className="col-lg-9 col-md-9 col-sm-12 col-xs-12 mt-3 list-archives">
                             {data && <ListNews data={data} size={data.length} desc={true} meta={false} showAds={true}/>}
-                            <NumberPage />
+                            <NumberPage toIndex={true}/>
                         </div>
                         <div className="col-lg-3 col-md-3 col-sm-12 col-xs-12 ">
 
