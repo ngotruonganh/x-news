@@ -12,12 +12,12 @@ export default function ListSection({ data, desc, isVideo, meta = true }) {
 		for (let step = 0; step < nstep; step++) {
 			if (step > 0 && step % 4 == 0) {
 				result.push(
-					<AdsBanner />
+					<AdsBanner key={step+99}/>
 				)
 			}
 
 			result.push(
-				<div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+				<div className="col-lg-6 col-md-6 col-sm-12 col-xs-12" key={step}>
 					<div className='masonry-box'>
 						<div className="section-title">
 							<span className={classNames("tag", getTagColor(data[step].type))}>{data[step].type}</span>
@@ -35,12 +35,8 @@ export default function ListSection({ data, desc, isVideo, meta = true }) {
 	}
 
 	return (
-		<div>
-			<div className='list-section'>
-				{renderBlockFour()}
-			</div>
-			<div>
-			</div>
+		<div className='list-section-wrapper'>
+			{renderBlockFour()}
 		</div>
 	)
 }

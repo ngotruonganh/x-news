@@ -9,7 +9,8 @@ import BreadCrumb from "./BreadCumb";
 import PostAuthor from "./PostAuthor";
 import HeadSection from "./Category/headSection";
 import ListSection from "./Category/listSection";
-export{
+import Header from "./Header";
+export {
     SectionFirst,
     SectionSecond,
     SectionThird,
@@ -20,5 +21,7 @@ export{
     BreadCrumb,
     PostAuthor,
     HeadSection,
-    ListSection
+    ListSection,
+    Header
+
 }

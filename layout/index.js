@@ -1,7 +1,6 @@
 import React from 'react'
 import Head from 'next/head'
 import Header from '../components/Header'
-import Slidebar from '../components/Slidebar'
 import Footer from '../components/Footer'
 export default function Layout({ children }) {
     return (
@@ -16,7 +15,6 @@ export default function Layout({ children }) {
             </Head>
             <main> 
                 <Header />
-                {/* <Slidebar /> */}
                 {children}
                 <Footer />
             </main>

@@ -176,7 +176,6 @@ export default function Chapts({ postDetail }) {
                                     topics. You can find the channels
                                     <link
                                         href="../catalog/cryptocurrencies?filter%5Bchat%5D=false"
-                                        passhref=""
                                     />
                                     here . Also, you can search by chats using our filters.
                                 </p>

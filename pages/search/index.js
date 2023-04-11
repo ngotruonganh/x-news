@@ -1,6 +1,5 @@
-import React, { useState } from "react";
+import React from "react";
 import Layout from "../../layout";
-import { useRouter } from "next/router";
 import { BreadCrumb, ListSection } from "../../components";
 import dataCategory from "../../mocks/resData/dataCategory.json";
 import dataSection from "../../mocks/resData/dataSection1.json";
@@ -9,30 +8,30 @@ import { getTagColor } from "../../utils/func";
 import dataRecent from "../../mocks/resData/dataRecent.json";
 import ListNews from "../../components/ListNews";
 import Pagination from "../../components/Pagination";
+import { useRouter } from "next/router";
 
 export default function Search() {
-  const router = useRouter();
-  const [search, setSearch] = useState("Bitcoin");
+  const router = useRouter()
+  const { query } = router
+  
   return (
     <Layout>
       <div className="search-wrap mt-3">
         <div className="d-flex align-items-center mt-2">
-          <BreadCrumb subTitle={`search result: ${search}`} />
+          <BreadCrumb subTitle={`search result: ${query.keyword}`} />
         </div>
         <div className="title mt-3">
           <span>Search Result: </span>
-          <span className="text-warning">{search}</span>
+          <span className="text-warning">{query.keyword}</span>
         </div>
         <div className="row">
           <div className="col-lg-9 col-md-9 col-sm-12 col-xs-12">
             {dataSection.data.length && (
-              <>
-                <ListSection
-                  data={dataSection.data}
-                  desc={true}
-                  isVideo={false}
-                />
-              </>
+              <ListSection
+                data={dataSection.data}
+                desc={true}
+                isVideo={false}
+              />
             )}
             <div className="d-flex justify-content-center my-3">
               <Pagination postPerPage={1} totalPost={5} />

@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function FollowUs() {
   return (
     <>
@@ -6,10 +8,10 @@ export default function FollowUs() {
       <img className="responsive" src="/assets/images/follow-us-3.png" alt="" />
       <img className="responsive" src="/assets/images/follow-us-4.png" alt="" />
       <img className="responsive" src="/assets/images/follow-us-5.png" alt="" />
-      <a className="follow-us" href="#">
+      <Link className="follow-us" href="/" passHref>
         <img src="/assets/images/instargram.png" alt="follow us" />
         <span>Follow us</span>
-      </a>
+      </Link>
     </>
   );
 }

@@ -9,7 +9,7 @@ export default function ListNews({ data, size = 5, className, desc = false, show
     let result = []
     for (let step = 0; step < size; step++) {
       if (showAds && (step % 4 == 0) && (step>0)) {
-        result.push(<div className='list-item-wrapper'>
+        result.push(<div className='list-item-wrapper' key={step+99}>
           <AdsBanner key={step} />
         </div>)
       }

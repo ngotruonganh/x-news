@@ -4,7 +4,7 @@ import SearchBar from "./search_bar";
 import NavigationMenu from "./nav_menu";
 import { menuList } from "../data/dataMenu";
 import classNames from "classnames";
-import SearchFrom from "../SearchForm";
+import SearchForm from "../SearchForm";
 import TopWeather from "./top_weather";
 import Link from "next/link";
 export default function Header() {
@@ -35,7 +35,7 @@ export default function Header() {
             </div>
           </div>
         </div>
-        {showSearch && <SearchFrom onClose={() => setShowSearch(false)} />}
+        {showSearch && <SearchForm onClose={() => setShowSearch(false)} />}
         <div className="header-section mt-2">
           <div className="layout">
             <div className="row d-flex justify-content-between">
@@ -67,7 +67,7 @@ export default function Header() {
                 </div>
                 <div className="read-more">
                   <Link
-                    href="#"
+                    href="/"
                     className="bg-warning border border-0 p-2 font-weight-bold"
                     passHref
                   >

@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Author() {
   return (
     <div className="about-author-wrap">
@@ -13,16 +15,17 @@ export default function Author() {
         including the Dily Sport.
       </p>
       <div className="social-link my-4">
-        <a
+        <Link
           href="/"
           data-toggle="tooltip"
           data-placement="bottom"
           title="Facebook"
           className="facebook d-flex justify-content-center align-items-center rounded-circle"
+          passHref
         >
           <img src="/assets/images/facebook.svg" alt="facebook" />
-        </a>
-        <a
+        </Link>
+        <Link
           href="/"
           data-toggle="tooltip"
           data-placement="bottom"
@@ -31,8 +34,8 @@ export default function Author() {
           passHref
         >
           <img src="/assets/images/instagram.svg" alt="instagram" />
-        </a>
-        <a
+        </Link>
+        <Link
           href="/"
           data-toggle="tooltip"
           data-placement="bottom"
@@ -41,8 +44,8 @@ export default function Author() {
           passHref
         >
           <img src="/assets/images/youtube.svg" alt="youtube" />
-        </a>
-        <a
+        </Link>
+        <Link
           href="/"
           data-toggle="tooltip"
           data-placement="bottom"
@@ -51,8 +54,8 @@ export default function Author() {
           passHref
         >
           <img src="/assets/images/twitter.svg" alt="twitter" />
-        </a>
-        <a
+        </Link>
+        <Link
           href="/"
           data-toggle="tooltip"
           data-placement="bottom"
@@ -61,9 +64,9 @@ export default function Author() {
           passHref
         >
           <img src="/assets/images/behance.svg" alt="behance" />
-        </a>
-        <a
-          href="#"
+        </Link>
+        <Link
+          href="/"
           data-toggle="tooltip"
           data-placement="bottom"
           title="Dibble"
@@ -71,9 +74,9 @@ export default function Author() {
           passHref
         >
           <img src="/assets/images/dribble.svg" alt="dibble" />
-        </a>
-        <a
-          href="#"
+        </Link>
+        <Link
+          href="/"
           data-toggle="tooltip"
           data-placement="bottom"
           title="Email"
@@ -81,7 +84,7 @@ export default function Author() {
           passHref
         >
           <img src="/assets/images/email.svg" alt="email" />
-        </a>
+        </Link>
       </div>
     </div>
   );

@@ -1,12 +1,12 @@
 .category-wrapper {
     padding-top: 20px;
+}
 
-    .list-section{
-        display: flex;
-        flex-wrap: wrap;
-        .masonry-box{
-            .blog-box{
-            }
+.list-section-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    .masonry-box{
+        .blog-box{
         }
     }
 }

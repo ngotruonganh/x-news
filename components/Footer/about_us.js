@@ -10,7 +10,7 @@ export default function AboutUs() {
       </p>
       <div className="social d-flex justify-content-center justify-content-lg-around">
         <Link
-          href="#"
+          href="/"
           data-toggle="tooltip"
           data-placement="bottom"
           title="Facebook"
@@ -20,7 +20,7 @@ export default function AboutUs() {
           <img src="/assets/images/facebook.svg" alt=""/>
         </Link>
         <Link
-          href="#"
+          href="/"
           data-toggle="tooltip"
           data-placement="bottom"
           title="Twitter"
@@ -30,7 +30,7 @@ export default function AboutUs() {
           <img src="/assets/images/twitter.svg" alt=""/>
         </Link>
         <Link
-          href="#"
+          href="/"
           data-toggle="tooltip"
           data-placement="bottom"
           title="Instagram"
@@ -40,7 +40,7 @@ export default function AboutUs() {
           <img src="/assets/images/instagram.svg" alt=""/>
         </Link>
         <Link
-          href="#"
+          href="/"
           data-toggle="tooltip"
           data-placement="bottom"
           title="Youtube"
