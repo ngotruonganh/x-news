@@ -1,7 +1,13 @@
-import Loading from '../components/Loading'
-import Layout from '../layout'
-import { SectionFirst, SectionFive, SectionFour, SectionSecond, SectionSix, SectionThird } from '../components'
-import { getHome } from './api/posts'
+import Layout from 'layout'
+import {
+	SectionFirst,
+	SectionFive,
+	SectionFour,
+	SectionSecond,
+	SectionSix,
+	SectionThird
+} from 'components'
+import { getHome } from 'pages/api/posts'
 
 export async function getStaticProps(context) {
 	// Fetch data from external API

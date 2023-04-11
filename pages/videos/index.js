@@ -1,31 +1,26 @@
-import classNames from 'classnames';
-import { BreadCrumb, ListSection, SideTag } from '../../components';
-import Layout from '../../layout'
-import { getTagColor } from '../../utils/func';
-import dataCategory from '../../mocks/resData/dataCategory.json'
-import dataRecent from '../../mocks/resData/dataRecent.json'
-import dataSection6 from '../../mocks/resData/dataSection6.json'
-import ListNews from '../../components/ListNews'
-import NumberPage from '../../components/NumberPage';
-
+import Layout from 'layout'
+import { BreadCrumb, ListSection, SideTag,Pagination,ListNews, RankBox } from 'components';
+import dataCategory from 'mocks/resData/dataCategory.json'
+import dataRecent from 'mocks/resData/dataRecent.json'
+import dataSection6 from 'mocks/resData/dataSection6.json'
 
 export default function Category() {
     const data = [...dataSection6.data, ...dataSection6.data]
     return (
         <Layout>
             <div className='category-wrapper layout-wrapper'>
-                <div className='mt-3'>
+                <div className='mt-3' id='scroll-index'>
                     <BreadCrumb subTitle="Videos" />
                     <SideTag title="Videos" showTag={false} />
-                    <p className='mt-3'>This is the place of all the international latest news, get it and make sure you always follow us to be up to dated all the time.</p>
                 </div>
                 <div className='row'>
                     <div className="col-lg-9 col-md-9 col-sm-12 col-xs-12">
+                    <p className='mt-3'>This is the place of all the international latest news,
+                     get it and make sure you always follow us to be up to dated all the time.</p>
                         {data && <ListSection data={data} desc={false} isVideo={true} meta={false} />}
-                        <NumberPage />
+                        <Pagination toIndex={true}/>
                     </div>
                     <div className="col-lg-3 col-md-3 col-sm-12 col-xs-12 ">
-
                         <div>
                             <div className="d-flex justify-content-between">
                                 <div className="align-self-start font-weight-bold">
@@ -45,19 +40,7 @@ export default function Category() {
                             <img src="/mocks/images/ads.svg" alt='' />
                             <div className='ads-item'>Ad</div>
                         </div>
-                        <div className="rank-wrapper">
-                            Category
-                            <hr className='throw-line' />
-                            {dataCategory.data.map((item, idx) => {
-                                return <div className="rank-item" key={idx}>
-                                    <span className='title'>
-                                        <img src="/assets/icons/icon-right.svg" alt='' />
-                                        {item.name}
-                                    </span>
-                                    <span className={classNames("total", getTagColor(item.tagSeo))} >{item.total}</span>
-                                </div>
-                            })}
-                        </div>
+                        <RankBox className="mt-3" title="Categories" data={dataCategory.data}/>
                     </div>
                 </div>
             </div>

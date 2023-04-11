@@ -1,7 +1,6 @@
 import React from 'react'
 import Head from 'next/head'
-import Header from '../components/Header'
-import Footer from '../components/Footer'
+import { Header, Footer } from '../components'
 export default function Layout({ children }) {
     return (
         <>
@@ -13,7 +12,7 @@ export default function Layout({ children }) {
                 <meta name="description" content="" />
                 <meta name="author" content="" />
             </Head>
-            <main> 
+            <main>
                 <Header />
                 {children}
                 <Footer />

@@ -1,8 +1,8 @@
 import React from 'react'
 import BlogBox from '../SectionBox/blog_box'
-import { getTagColor } from '../../utils/func'
+import { getTagColor } from 'utils/func'
 import classNames from 'classnames'
-import dataTag from '../../mocks/resData/dataTag.json'
+import dataTag from 'mocks/resData/dataTag.json'
 import { MasonryBox, MasonryBoxSub } from '../SectionBox'
 import SideTag from '../SideTag'
 export default function SectionFive({ data }) {
@@ -33,9 +33,6 @@ export default function SectionFive({ data }) {
                 <div className="col-lg-9 col-md-9 col-sm-12 col-xs-12 d-flex justify-content-betwee m-0 p-0">
                     <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12">
                         <div className='masonry-box'>
-                            <div className="section-title">
-                                <span className={classNames("tag", getTagColor(data[0].type))}>{data[0].type}</span>
-                            </div>
                             <div className="row">
                                 <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                     <BlogBox className="blog-meta big-meta" data={data[1]} desc={true} isVideo={true} />
@@ -45,9 +42,6 @@ export default function SectionFive({ data }) {
                     </div>
                     <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12">
                         <div className='masonry-box '>
-                            <div className="section-title">
-                                <span className={classNames("tag", getTagColor(data[0].type))}>{data[0].type}</span>
-                            </div>
                             <div className="row">
                                 <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                     <BlogBox className="blog-meta big-meta" data={data[1]} desc={true} isVideo={true} />
@@ -57,9 +51,6 @@ export default function SectionFive({ data }) {
                     </div>
                     <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12">
                         <div className='masonry-box '>
-                            <div className="section-title">
-                                <span className={classNames("tag", getTagColor(data[0].type))}>{data[0].type}</span>
-                            </div>
                             <div className="row">
                                 <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                     <BlogBox className="blog-meta big-meta" data={data[2]} desc={true} isVideo={true} />

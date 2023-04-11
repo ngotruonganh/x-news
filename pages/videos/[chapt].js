@@ -1,9 +1,9 @@
 import React from 'react'
-import Layout from '../../layout'
-import { BreadCrumb, PostAuthor, ListSection } from '../../components'
-import { BlogBox } from '../../components/SectionBox'
-import dataSection6 from '../../mocks/resData/dataSection6.json'
-import AdsBanner from '../../components/AdsBanner'
+import Layout from 'layout'
+import { BreadCrumb, PostAuthor } from 'components'
+import { BlogBox } from 'components/SectionBox'
+import dataSection6 from 'mocks/resData/dataSection6.json'
+import AdsBanner from 'components/AdsBanner'
 
 export default function VideosDetail() {
     const data = dataSection6.data

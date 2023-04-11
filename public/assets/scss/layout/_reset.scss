@@ -279,7 +279,7 @@ main {
     margin: 0 auto;
 
     @include media-breakpoint-down(md) {
-        width: 99%;
+        width: 95%;
     }
 }
 
@@ -300,6 +300,13 @@ main {
     color: white;
     padding: 5px;
     border-radius: 3px;
+
+    @include media-breakpoint-down(md) {
+        font-size: 12px;
+        line-height: 12px;
+        padding: 3px;
+        margin: 0;
+    }
 }
 
 .text-wrap {

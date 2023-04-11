@@ -1,7 +1,7 @@
-import Layout from '../../layout'
-import { BreadCrumb } from '../../components';
+import Layout from 'layout'
+import { BreadCrumb } from 'components';
 // import Images from '/assets/images'
-import { getHome } from "../api/home";
+import { getHome } from "pages/api/home";
 
 export async function getInitialProps(context) {
     // Fetch data from external API
@@ -10,6 +10,7 @@ export async function getInitialProps(context) {
     // Pass data to the page via props
     return { props: { menuCate: menuCate } }
 }
+
 export default function ContactUs() {
     return (
         <Layout>

@@ -1,6 +1,6 @@
 import React from 'react'
 import classNames from 'classnames'
-import dataSocial from '../../mocks/resData/dataSocial.json'
+import dataSocial from 'mocks/resData/dataSocial.json'
 import { useRouter } from 'next/router'
 
 export default function PostAuthor() {

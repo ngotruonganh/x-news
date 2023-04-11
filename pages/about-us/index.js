@@ -1,7 +1,7 @@
 import React from 'react'
-import Layout from '../../layout'
-import { HeadSection, BreadCrumb } from '../../components'
-import dataSection1 from '../../mocks/resData/dataSection1.json'
+import Layout from 'layout'
+import { HeadSection, BreadCrumb } from 'components'
+import dataSection1 from 'mocks/resData/dataSection1.json'
 export default function AboutUS() {
     return (
         <Layout>

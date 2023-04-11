@@ -1,6 +1,8 @@
 import { useRouter } from 'next/router'
 import React from 'react'
 import Link from 'next/link';
+import classNames from 'classnames';
+import { getTagColor } from 'utils/func';
 export default function BlogBox({ className, data, desc = false, showName = false, isVideo = false, meta = true }) {
     const router = useRouter()
 
@@ -16,6 +18,7 @@ export default function BlogBox({ className, data, desc = false, showName = fals
     return (
         data ? <div className="blog-box">
             <div className="post-media">
+                <span className={classNames("tag", getTagColor(data.type))}>{data.type}</span>
                 <div
                     onClick={onClickPosts}
                 >
@@ -30,7 +33,6 @@ export default function BlogBox({ className, data, desc = false, showName = fals
                 </div>
             </div>
             <div className={className}>
-
                 <div
                     onClick={onClickPosts}
                 >

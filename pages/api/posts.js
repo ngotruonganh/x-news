@@ -1,13 +1,13 @@
-import dataSection1 from '../../mocks/resData/dataSection1.json'
-import dataSection2 from '../../mocks/resData/dataSection2.json'
-import dataSection3 from '../../mocks/resData/dataSection3.json'
-import dataSection4 from '../../mocks/resData/dataSection4.json'
-import dataSection5 from '../../mocks/resData/dataSection5.json'
-import dataSection6 from '../../mocks/resData/dataSection6.json'
-import { sleep } from '../../utils/func'
+import dataSection1 from 'mocks/resData/dataSection1.json'
+import dataSection2 from 'mocks/resData/dataSection2.json'
+import dataSection3 from 'mocks/resData/dataSection3.json'
+import dataSection4 from 'mocks/resData/dataSection4.json'
+import dataSection5 from 'mocks/resData/dataSection5.json'
+import dataSection6 from 'mocks/resData/dataSection6.json'
+import { sleep } from 'utils/func'
 
 async function getHome() {
-    await sleep(1000)
+    await sleep(100)
     return {
         dataSection1: dataSection1.data,
         dataSection2: dataSection2.data,

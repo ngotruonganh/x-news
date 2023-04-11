@@ -1,12 +1,12 @@
-import classNames from 'classnames'
-import Layout from '../../layout'
-import dataSection4 from '../../mocks/resData/dataSection4.json'
-import dataSocial from '../../mocks/resData/dataSocial.json'
-import { getTagColor } from '../../utils/func'
-import BlogBox from '../../components/SectionBox/blog_box'
-import { BreadCrumb } from '../../components'
 import { useRouter } from 'next/router'
-import { getPostsDetail } from '../api/posts'
+import classNames from 'classnames'
+import Layout from 'layout'
+import { BreadCrumb,BlogBox, RankBox } from 'components'
+import { getTagColor } from 'utils/func'
+import { getPostsDetail } from 'pages/api/posts'
+import dataSection4 from 'mocks/resData/dataSection4.json'
+import dataSocial from 'mocks/resData/dataSocial.json'
+import dataCategory from 'mocks/resData/dataCategory.json'
 
 export async function getInitialProps() {
     const postDetail = await getPostsDetail()
@@ -59,7 +59,6 @@ export default function Chapts({ postDetail }) {
                                     })}
                                 </div>
                                 <div>
-
                                 </div>
                             </div>
                             <div className="description-wrapper">
@@ -283,9 +282,6 @@ export default function Chapts({ postDetail }) {
                                 <div className="col-lg-12 col-md- col-sm-12 col-xs-12 row justify-content-betwee m-0 p-0">
                                     <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12">
                                         <div className='masonry-box'>
-                                            <div className="section-title">
-                                                <span className={classNames("tag", getTagColor(data[0].type))}>{data[0].type}</span>
-                                            </div>
                                             <div className="row">
                                                 <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                                     <BlogBox className="blog-meta big-meta" data={data[1]} desc={true} />
@@ -295,9 +291,6 @@ export default function Chapts({ postDetail }) {
                                     </div>
                                     <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12">
                                         <div className='masonry-box '>
-                                            <div className="section-title">
-                                                <span className={classNames("tag", getTagColor(data[0].type))}>{data[0].type}</span>
-                                            </div>
                                             <div className="row">
                                                 <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                                     <BlogBox className="blog-meta big-meta" data={data[1]} desc={true} />
@@ -307,9 +300,6 @@ export default function Chapts({ postDetail }) {
                                     </div>
                                     <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12">
                                         <div className='masonry-box '>
-                                            <div className="section-title">
-                                                <span className={classNames("tag", getTagColor(data[0].type))}>{data[0].type}</span>
-                                            </div>
                                             <div className="row">
                                                 <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                                     <BlogBox className="blog-meta big-meta" data={data[2]} desc={true} />
@@ -355,6 +345,7 @@ export default function Chapts({ postDetail }) {
                                     </div>
                                 </div>
                             </div>
+                            <RankBox className="mt-3" title="Categories" data={dataCategory.data}/>
                         </div>
 
                     </div>

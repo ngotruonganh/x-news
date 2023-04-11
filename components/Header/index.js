@@ -4,7 +4,7 @@ import SearchBar from "./search_bar";
 import NavigationMenu from "./nav_menu";
 import { menuList } from "../data/dataMenu";
 import classNames from "classnames";
-import SearchForm from "../SearchForm";
+import SearchForm from "components/SearchForm";
 import TopWeather from "./top_weather";
 import Link from "next/link";
 export default function Header() {

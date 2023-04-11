@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Layout from "../layout";
+import Layout from "layout";
 
 export async function getInitialProps(context) {
   // Fetch data from external API

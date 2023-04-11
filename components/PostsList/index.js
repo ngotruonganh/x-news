@@ -1,5 +1,5 @@
 import PostItem from "./PostItem";
-import data from "../../mocks/resData/dataPostByAuthor.json";
+import data from "mocks/resData/dataPostByAuthor.json";
 
 function PostsList() {
   return (

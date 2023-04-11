@@ -1,4 +1,4 @@
-import Layout from '../../layout'
+import Layout from 'layout'
 import { getHome } from '../api/home'
 
 export async function getInitialProps(context) {

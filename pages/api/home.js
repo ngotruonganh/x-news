@@ -1,4 +1,4 @@
-import { sleep } from "../../utils/func";
+import { sleep } from "utils/func";
 
 async function getHome(){
     await sleep(100)

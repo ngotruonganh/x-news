@@ -5,10 +5,6 @@
 .list-section-wrapper{
     display: flex;
     flex-wrap: wrap;
-    .masonry-box{
-        .blog-box{
-        }
-    }
 }
 
 .head-section-wrapper {
@@ -50,7 +46,39 @@
         }
         .masonry-box {
             width: 50%;
-            height: 200px;
+            height: 210px;
+        }
+    }
+
+    @include media-breakpoint-down(md) {
+    
+        .masonry-full {
+            img {
+                height: 299px !important;
+            }
+        }
+
+        .section-left {
+            flex-basis: 50%;
+            .title{
+                font-size: 14px;
+            }
+            .masonry-box {
+    
+                img {
+                    height: 200px;
+    
+                }
+            }
+        }
+    
+        .section-right {
+            .title{
+                font-size: 12px;
+            }
+            .masonry-box {
+                height: 110px;
+            }
         }
     }
 }

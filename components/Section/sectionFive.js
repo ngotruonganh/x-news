@@ -1,8 +1,8 @@
 import React from 'react'
 import BlogBox from '../SectionBox/blog_box'
-import { getTagColor } from '../../utils/func'
+import { getTagColor } from 'utils/func'
 import classNames from 'classnames'
-import dataCategory from '../../mocks/resData/dataCategory.json'
+import dataCategory from 'mocks/resData/dataCategory.json'
 import ListNews from '../ListNews'
 import SideTag from '../SideTag'
 import AdsBanner from '../AdsBanner'
@@ -21,9 +21,6 @@ export default function SectionFive({ data }) {
                     <div className='d-flex'>
                         <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                             <div className='masonry-box '>
-                                <div className="section-title">
-                                    <span className={classNames("tag", getTagColor(data[0].type))}>{data[0].type}</span>
-                                </div>
                                 <div className="row">
                                     <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                         <BlogBox className="blog-meta big-meta" data={data[1]} desc={true} />
@@ -33,9 +30,6 @@ export default function SectionFive({ data }) {
                         </div>
                         <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                             <div className='masonry-box '>
-                                <div className="section-title">
-                                    <span className={classNames("tag", getTagColor(data[0].type))}>{data[0].type}</span>
-                                </div>
                                 <div className="row">
                                     <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                         <BlogBox className="blog-meta big-meta" data={data[1]} desc={true} />
