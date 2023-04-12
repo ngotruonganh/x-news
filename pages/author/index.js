@@ -1,6 +1,6 @@
 import React from "react";
 import Layout from "layout";
-import Author from "pages/author";
+import Author from "views/author/author";
 import { BreadCrumb,Pagination } from "components";
 import data from "mocks/resData/dataPostByAuthor.json";
 export default function AuthorPage() {

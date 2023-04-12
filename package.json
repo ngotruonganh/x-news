@@ -1,5 +1,5 @@
 {
-  "name": "coin-app",
+  "name": "fintechx-app",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -15,9 +15,9 @@
     "next": "^13.3.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-slick": "^0.28.1",
+    "react-slick": "^0.29.0",
     "react-svg": "^16.1.7",
-    "scss": "^0.2.4"
+    "sass": "^1.62.0"
   },
   "devDependencies": {
     "eslint": "8.4.0",
